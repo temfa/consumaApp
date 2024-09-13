@@ -14,6 +14,54 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-ConsumaApp-ConsumaAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ConsumaApp-ConsumaAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A1DEF16EBAC3437897F54EC9 /* Mona-Sans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4F739D173E84142BAC71831 /* Mona-Sans-Black.ttf */; };
+		E013056F66AF45168D4B6908 /* Mona-Sans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21F7714235DA41E1B653893B /* Mona-Sans-BlackItalic.ttf */; };
+		ED8E407E490F4FCEA76E1C5E /* Mona-Sans-BlackNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5299735E2E9B4E8CB9E0463B /* Mona-Sans-BlackNarrow.ttf */; };
+		30517E80A55D4C98B10B9308 /* Mona-Sans-BlackNarrowItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1730414021C473A9A3D6EC2 /* Mona-Sans-BlackNarrowItalic.ttf */; };
+		5DC76A80601B45118EEF8416 /* Mona-Sans-BlackWide.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DCB6740284D43C0B27FAE7C /* Mona-Sans-BlackWide.ttf */; };
+		91B2A9237A494AC2A923863D /* Mona-Sans-BlackWideItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC0D4A13A693433789649DE3 /* Mona-Sans-BlackWideItalic.ttf */; };
+		AD5E695D16BE40BBBED7E553 /* Mona-Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE59B6A7D7F54876B71C2246 /* Mona-Sans-Bold.ttf */; };
+		B6D8C21711C04EA3B9792928 /* Mona-Sans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB1C099962DA408CA75C60C4 /* Mona-Sans-BoldItalic.ttf */; };
+		635F85D7D3D24090917C33A9 /* Mona-Sans-BoldNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9486A93C3FF549BFBCD528C1 /* Mona-Sans-BoldNarrow.ttf */; };
+		4F774122F054413ABCD28D2B /* Mona-Sans-BoldNarrowItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9371E8EF81DE44549ECBEEDE /* Mona-Sans-BoldNarrowItalic.ttf */; };
+		34AF0BC6C7A24120BD210E7B /* Mona-Sans-BoldWide.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BB633BD222041DABCAF4E3D /* Mona-Sans-BoldWide.ttf */; };
+		400FF439B0A3494A8FA38BB0 /* Mona-Sans-BoldWideItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 732B5B64DF4B410481B69F53 /* Mona-Sans-BoldWideItalic.ttf */; };
+		DFA09BE1EC3642ABA474E102 /* Mona-Sans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87139D7B81384197AC08E6E4 /* Mona-Sans-ExtraBold.ttf */; };
+		A3F1DBB0DF754D21A4C463BD /* Mona-Sans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4EFAF825CB89448CAFF5A659 /* Mona-Sans-ExtraBoldItalic.ttf */; };
+		07C9C3CFB2B14A8AB60B3515 /* Mona-Sans-ExtraBoldNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B75F78BC7314DA89496867B /* Mona-Sans-ExtraBoldNarrow.ttf */; };
+		579A97751C8240A080463140 /* Mona-Sans-ExtraBoldNarrowItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5C7B1DD6E7A4E9A8B1B599E /* Mona-Sans-ExtraBoldNarrowItalic.ttf */; };
+		899F8C23E3F84D3CA8F2A500 /* Mona-Sans-ExtraBoldWide.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6456C0021C02450983A4754B /* Mona-Sans-ExtraBoldWide.ttf */; };
+		FD99AC4DE5FC49319B377F8E /* Mona-Sans-ExtraBoldWideItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23729F5DCFC244FDB0C6B4EB /* Mona-Sans-ExtraBoldWideItalic.ttf */; };
+		1B7731E201504EE49475F824 /* Mona-Sans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3A76FF5A798459F86196774 /* Mona-Sans-Light.ttf */; };
+		C8E3C4DC65064683ADB7CBBF /* Mona-Sans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA59F230513B4BD182C0F490 /* Mona-Sans-LightItalic.ttf */; };
+		69238530C1854961AE5E781E /* Mona-Sans-LightNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A51C506282164614968DEEEC /* Mona-Sans-LightNarrow.ttf */; };
+		3E7AC60163164834B9638D1F /* Mona-Sans-LightNarrowItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C09D9C8AA5644C2810B7EA9 /* Mona-Sans-LightNarrowItalic.ttf */; };
+		A26E94BCB1F043C88D0DEA5B /* Mona-Sans-LightWide.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F3F86E2844248C9A7F5BECF /* Mona-Sans-LightWide.ttf */; };
+		205FCCF74562441A9B37B161 /* Mona-Sans-LightWideItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AFD6268203648E5A67EA0F5 /* Mona-Sans-LightWideItalic.ttf */; };
+		503928882CDD49F6A0C096D0 /* Mona-Sans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA84B3E7C01745B199786942 /* Mona-Sans-Medium.ttf */; };
+		E995FE121BB24C64B7310ADC /* Mona-Sans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C80F35C5C474B89BC156646 /* Mona-Sans-MediumItalic.ttf */; };
+		4D7421B53EE34DF59BBCC8A0 /* Mona-Sans-MediumNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED0CCE74DD834348AB936323 /* Mona-Sans-MediumNarrow.ttf */; };
+		592CE17D21D840DA9641BE55 /* Mona-Sans-MediumNarrowItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D0C3BD311824E08BA965E96 /* Mona-Sans-MediumNarrowItalic.ttf */; };
+		E0AC11425F2C480FA1ABBC77 /* Mona-Sans-MediumWide.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2632C6FC1C6644599358CEC7 /* Mona-Sans-MediumWide.ttf */; };
+		3FDDF43FC0954B30BC0F8544 /* Mona-Sans-MediumWideItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D80FE1B8754449C085CD9046 /* Mona-Sans-MediumWideItalic.ttf */; };
+		28A584F24FD74032ACEC3423 /* Mona-Sans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 819CFB0D244F40A1A92FEAFB /* Mona-Sans-Regular.ttf */; };
+		A721A09D22534B0CAEC236F3 /* Mona-Sans-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 900661B3086D41A8B99D9929 /* Mona-Sans-RegularItalic.ttf */; };
+		123EE1DE61C14A3AB4B2AD6C /* Mona-Sans-RegularNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75389F4785594F05BB0A7700 /* Mona-Sans-RegularNarrow.ttf */; };
+		AE12FA9BD64945A9994F6FC7 /* Mona-Sans-RegularNarrowItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC688AFE38F94D63823F94D9 /* Mona-Sans-RegularNarrowItalic.ttf */; };
+		F678542B2FF440BE8283ABEF /* Mona-Sans-RegularWide.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7352F5FBEE51458AB07248CB /* Mona-Sans-RegularWide.ttf */; };
+		5851E33B8F164061BB4289CD /* Mona-Sans-RegularWideItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE55D2EAA96F4EDC8FA3A33E /* Mona-Sans-RegularWideItalic.ttf */; };
+		E351B3B02EEE4A4EA1A2A42F /* Mona-Sans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FE66AC4937E47E19DCD1360 /* Mona-Sans-SemiBold.ttf */; };
+		48E4A8DBB1B1472384673109 /* Mona-Sans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49FCD0689D6941EB9AC1F54E /* Mona-Sans-SemiBoldItalic.ttf */; };
+		4EAC0300AA0B44BAA4A005FD /* Mona-Sans-SemiBoldNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 256CF50B0758452A80C56917 /* Mona-Sans-SemiBoldNarrow.ttf */; };
+		2C77916833184126A77BA34A /* Mona-Sans-SemiBoldNarrowItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5D41C46A9FC4AEBA8F74130 /* Mona-Sans-SemiBoldNarrowItalic.ttf */; };
+		5A09AE9397E24BABBA567BD6 /* Mona-Sans-SemiBoldWide.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2CAFE9954DD452980642F0A /* Mona-Sans-SemiBoldWide.ttf */; };
+		97BAD47DCF2D489FAE95F912 /* Mona-Sans-SemiBoldWideItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9AF8F7DCB1646888F40778E /* Mona-Sans-SemiBoldWideItalic.ttf */; };
+		CD2F250F96994B29B07E9AD0 /* Mona-Sans-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43EA0EEBA510483A8015D03B /* Mona-Sans-UltraLight.ttf */; };
+		61D54C1CA8654B7781978CE1 /* Mona-Sans-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEC1C1D166CF48B5A6B331D5 /* Mona-Sans-UltraLightItalic.ttf */; };
+		34F34FF2BA404EBEB97A7A79 /* Mona-Sans-UltraLightNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B176B4BDA27F4FB0BB5F1D27 /* Mona-Sans-UltraLightNarrow.ttf */; };
+		09B8020E392F44D882F9F203 /* Mona-Sans-UltraLightNarrowItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6A39E5839404560987E55F4 /* Mona-Sans-UltraLightNarrowItalic.ttf */; };
+		DD57EFE00E4D4E4EA1FBFA68 /* Mona-Sans-UltraLightWide.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED8DE582EF5949D0AB7BF617 /* Mona-Sans-UltraLightWide.ttf */; };
+		A916747D45994F69ACB62EE2 /* Mona-Sans-UltraLightWideItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BF5CF1C77B24F0EB739EC1B /* Mona-Sans-UltraLightWideItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +84,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ConsumaApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ConsumaApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ConsumaApp/main.m; sourceTree = "<group>"; };
-	    13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ConsumaApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ConsumaApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ConsumaApp-ConsumaAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ConsumaApp-ConsumaAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-ConsumaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumaApp.debug.xcconfig"; path = "Target Support Files/Pods-ConsumaApp/Pods-ConsumaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ConsumaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumaApp.release.xcconfig"; path = "Target Support Files/Pods-ConsumaApp/Pods-ConsumaApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -45,6 +93,54 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ConsumaApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ConsumaApp-ConsumaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConsumaApp-ConsumaAppTests.release.xcconfig"; path = "Target Support Files/Pods-ConsumaApp-ConsumaAppTests/Pods-ConsumaApp-ConsumaAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		E4F739D173E84142BAC71831 /* Mona-Sans-Black.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-Black.ttf"; path = "../assets/fonts/Mona-Sans-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		21F7714235DA41E1B653893B /* Mona-Sans-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-BlackItalic.ttf"; path = "../assets/fonts/Mona-Sans-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5299735E2E9B4E8CB9E0463B /* Mona-Sans-BlackNarrow.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-BlackNarrow.ttf"; path = "../assets/fonts/Mona-Sans-BlackNarrow.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E1730414021C473A9A3D6EC2 /* Mona-Sans-BlackNarrowItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-BlackNarrowItalic.ttf"; path = "../assets/fonts/Mona-Sans-BlackNarrowItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2DCB6740284D43C0B27FAE7C /* Mona-Sans-BlackWide.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-BlackWide.ttf"; path = "../assets/fonts/Mona-Sans-BlackWide.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC0D4A13A693433789649DE3 /* Mona-Sans-BlackWideItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-BlackWideItalic.ttf"; path = "../assets/fonts/Mona-Sans-BlackWideItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AE59B6A7D7F54876B71C2246 /* Mona-Sans-Bold.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-Bold.ttf"; path = "../assets/fonts/Mona-Sans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FB1C099962DA408CA75C60C4 /* Mona-Sans-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-BoldItalic.ttf"; path = "../assets/fonts/Mona-Sans-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9486A93C3FF549BFBCD528C1 /* Mona-Sans-BoldNarrow.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-BoldNarrow.ttf"; path = "../assets/fonts/Mona-Sans-BoldNarrow.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9371E8EF81DE44549ECBEEDE /* Mona-Sans-BoldNarrowItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-BoldNarrowItalic.ttf"; path = "../assets/fonts/Mona-Sans-BoldNarrowItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4BB633BD222041DABCAF4E3D /* Mona-Sans-BoldWide.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-BoldWide.ttf"; path = "../assets/fonts/Mona-Sans-BoldWide.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		732B5B64DF4B410481B69F53 /* Mona-Sans-BoldWideItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-BoldWideItalic.ttf"; path = "../assets/fonts/Mona-Sans-BoldWideItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		87139D7B81384197AC08E6E4 /* Mona-Sans-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-ExtraBold.ttf"; path = "../assets/fonts/Mona-Sans-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4EFAF825CB89448CAFF5A659 /* Mona-Sans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-ExtraBoldItalic.ttf"; path = "../assets/fonts/Mona-Sans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0B75F78BC7314DA89496867B /* Mona-Sans-ExtraBoldNarrow.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-ExtraBoldNarrow.ttf"; path = "../assets/fonts/Mona-Sans-ExtraBoldNarrow.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A5C7B1DD6E7A4E9A8B1B599E /* Mona-Sans-ExtraBoldNarrowItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-ExtraBoldNarrowItalic.ttf"; path = "../assets/fonts/Mona-Sans-ExtraBoldNarrowItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6456C0021C02450983A4754B /* Mona-Sans-ExtraBoldWide.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-ExtraBoldWide.ttf"; path = "../assets/fonts/Mona-Sans-ExtraBoldWide.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		23729F5DCFC244FDB0C6B4EB /* Mona-Sans-ExtraBoldWideItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-ExtraBoldWideItalic.ttf"; path = "../assets/fonts/Mona-Sans-ExtraBoldWideItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E3A76FF5A798459F86196774 /* Mona-Sans-Light.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-Light.ttf"; path = "../assets/fonts/Mona-Sans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CA59F230513B4BD182C0F490 /* Mona-Sans-LightItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-LightItalic.ttf"; path = "../assets/fonts/Mona-Sans-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A51C506282164614968DEEEC /* Mona-Sans-LightNarrow.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-LightNarrow.ttf"; path = "../assets/fonts/Mona-Sans-LightNarrow.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2C09D9C8AA5644C2810B7EA9 /* Mona-Sans-LightNarrowItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-LightNarrowItalic.ttf"; path = "../assets/fonts/Mona-Sans-LightNarrowItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8F3F86E2844248C9A7F5BECF /* Mona-Sans-LightWide.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-LightWide.ttf"; path = "../assets/fonts/Mona-Sans-LightWide.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7AFD6268203648E5A67EA0F5 /* Mona-Sans-LightWideItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-LightWideItalic.ttf"; path = "../assets/fonts/Mona-Sans-LightWideItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EA84B3E7C01745B199786942 /* Mona-Sans-Medium.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-Medium.ttf"; path = "../assets/fonts/Mona-Sans-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8C80F35C5C474B89BC156646 /* Mona-Sans-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-MediumItalic.ttf"; path = "../assets/fonts/Mona-Sans-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ED0CCE74DD834348AB936323 /* Mona-Sans-MediumNarrow.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-MediumNarrow.ttf"; path = "../assets/fonts/Mona-Sans-MediumNarrow.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8D0C3BD311824E08BA965E96 /* Mona-Sans-MediumNarrowItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-MediumNarrowItalic.ttf"; path = "../assets/fonts/Mona-Sans-MediumNarrowItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2632C6FC1C6644599358CEC7 /* Mona-Sans-MediumWide.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-MediumWide.ttf"; path = "../assets/fonts/Mona-Sans-MediumWide.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D80FE1B8754449C085CD9046 /* Mona-Sans-MediumWideItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-MediumWideItalic.ttf"; path = "../assets/fonts/Mona-Sans-MediumWideItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		819CFB0D244F40A1A92FEAFB /* Mona-Sans-Regular.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-Regular.ttf"; path = "../assets/fonts/Mona-Sans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		900661B3086D41A8B99D9929 /* Mona-Sans-RegularItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-RegularItalic.ttf"; path = "../assets/fonts/Mona-Sans-RegularItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		75389F4785594F05BB0A7700 /* Mona-Sans-RegularNarrow.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-RegularNarrow.ttf"; path = "../assets/fonts/Mona-Sans-RegularNarrow.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC688AFE38F94D63823F94D9 /* Mona-Sans-RegularNarrowItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-RegularNarrowItalic.ttf"; path = "../assets/fonts/Mona-Sans-RegularNarrowItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7352F5FBEE51458AB07248CB /* Mona-Sans-RegularWide.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-RegularWide.ttf"; path = "../assets/fonts/Mona-Sans-RegularWide.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AE55D2EAA96F4EDC8FA3A33E /* Mona-Sans-RegularWideItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-RegularWideItalic.ttf"; path = "../assets/fonts/Mona-Sans-RegularWideItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4FE66AC4937E47E19DCD1360 /* Mona-Sans-SemiBold.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-SemiBold.ttf"; path = "../assets/fonts/Mona-Sans-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		49FCD0689D6941EB9AC1F54E /* Mona-Sans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-SemiBoldItalic.ttf"; path = "../assets/fonts/Mona-Sans-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		256CF50B0758452A80C56917 /* Mona-Sans-SemiBoldNarrow.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-SemiBoldNarrow.ttf"; path = "../assets/fonts/Mona-Sans-SemiBoldNarrow.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E5D41C46A9FC4AEBA8F74130 /* Mona-Sans-SemiBoldNarrowItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-SemiBoldNarrowItalic.ttf"; path = "../assets/fonts/Mona-Sans-SemiBoldNarrowItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C2CAFE9954DD452980642F0A /* Mona-Sans-SemiBoldWide.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-SemiBoldWide.ttf"; path = "../assets/fonts/Mona-Sans-SemiBoldWide.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B9AF8F7DCB1646888F40778E /* Mona-Sans-SemiBoldWideItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-SemiBoldWideItalic.ttf"; path = "../assets/fonts/Mona-Sans-SemiBoldWideItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		43EA0EEBA510483A8015D03B /* Mona-Sans-UltraLight.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-UltraLight.ttf"; path = "../assets/fonts/Mona-Sans-UltraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BEC1C1D166CF48B5A6B331D5 /* Mona-Sans-UltraLightItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-UltraLightItalic.ttf"; path = "../assets/fonts/Mona-Sans-UltraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B176B4BDA27F4FB0BB5F1D27 /* Mona-Sans-UltraLightNarrow.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-UltraLightNarrow.ttf"; path = "../assets/fonts/Mona-Sans-UltraLightNarrow.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E6A39E5839404560987E55F4 /* Mona-Sans-UltraLightNarrowItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-UltraLightNarrowItalic.ttf"; path = "../assets/fonts/Mona-Sans-UltraLightNarrowItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ED8DE582EF5949D0AB7BF617 /* Mona-Sans-UltraLightWide.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-UltraLightWide.ttf"; path = "../assets/fonts/Mona-Sans-UltraLightWide.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3BF5CF1C77B24F0EB739EC1B /* Mona-Sans-UltraLightWideItalic.ttf */ = {isa = PBXFileReference; name = "Mona-Sans-UltraLightWideItalic.ttf"; path = "../assets/fonts/Mona-Sans-UltraLightWideItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +220,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				02DA288DC56447BB9FF89FC7 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +246,62 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		02DA288DC56447BB9FF89FC7 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				E4F739D173E84142BAC71831 /* Mona-Sans-Black.ttf */,
+				21F7714235DA41E1B653893B /* Mona-Sans-BlackItalic.ttf */,
+				5299735E2E9B4E8CB9E0463B /* Mona-Sans-BlackNarrow.ttf */,
+				E1730414021C473A9A3D6EC2 /* Mona-Sans-BlackNarrowItalic.ttf */,
+				2DCB6740284D43C0B27FAE7C /* Mona-Sans-BlackWide.ttf */,
+				AC0D4A13A693433789649DE3 /* Mona-Sans-BlackWideItalic.ttf */,
+				AE59B6A7D7F54876B71C2246 /* Mona-Sans-Bold.ttf */,
+				FB1C099962DA408CA75C60C4 /* Mona-Sans-BoldItalic.ttf */,
+				9486A93C3FF549BFBCD528C1 /* Mona-Sans-BoldNarrow.ttf */,
+				9371E8EF81DE44549ECBEEDE /* Mona-Sans-BoldNarrowItalic.ttf */,
+				4BB633BD222041DABCAF4E3D /* Mona-Sans-BoldWide.ttf */,
+				732B5B64DF4B410481B69F53 /* Mona-Sans-BoldWideItalic.ttf */,
+				87139D7B81384197AC08E6E4 /* Mona-Sans-ExtraBold.ttf */,
+				4EFAF825CB89448CAFF5A659 /* Mona-Sans-ExtraBoldItalic.ttf */,
+				0B75F78BC7314DA89496867B /* Mona-Sans-ExtraBoldNarrow.ttf */,
+				A5C7B1DD6E7A4E9A8B1B599E /* Mona-Sans-ExtraBoldNarrowItalic.ttf */,
+				6456C0021C02450983A4754B /* Mona-Sans-ExtraBoldWide.ttf */,
+				23729F5DCFC244FDB0C6B4EB /* Mona-Sans-ExtraBoldWideItalic.ttf */,
+				E3A76FF5A798459F86196774 /* Mona-Sans-Light.ttf */,
+				CA59F230513B4BD182C0F490 /* Mona-Sans-LightItalic.ttf */,
+				A51C506282164614968DEEEC /* Mona-Sans-LightNarrow.ttf */,
+				2C09D9C8AA5644C2810B7EA9 /* Mona-Sans-LightNarrowItalic.ttf */,
+				8F3F86E2844248C9A7F5BECF /* Mona-Sans-LightWide.ttf */,
+				7AFD6268203648E5A67EA0F5 /* Mona-Sans-LightWideItalic.ttf */,
+				EA84B3E7C01745B199786942 /* Mona-Sans-Medium.ttf */,
+				8C80F35C5C474B89BC156646 /* Mona-Sans-MediumItalic.ttf */,
+				ED0CCE74DD834348AB936323 /* Mona-Sans-MediumNarrow.ttf */,
+				8D0C3BD311824E08BA965E96 /* Mona-Sans-MediumNarrowItalic.ttf */,
+				2632C6FC1C6644599358CEC7 /* Mona-Sans-MediumWide.ttf */,
+				D80FE1B8754449C085CD9046 /* Mona-Sans-MediumWideItalic.ttf */,
+				819CFB0D244F40A1A92FEAFB /* Mona-Sans-Regular.ttf */,
+				900661B3086D41A8B99D9929 /* Mona-Sans-RegularItalic.ttf */,
+				75389F4785594F05BB0A7700 /* Mona-Sans-RegularNarrow.ttf */,
+				AC688AFE38F94D63823F94D9 /* Mona-Sans-RegularNarrowItalic.ttf */,
+				7352F5FBEE51458AB07248CB /* Mona-Sans-RegularWide.ttf */,
+				AE55D2EAA96F4EDC8FA3A33E /* Mona-Sans-RegularWideItalic.ttf */,
+				4FE66AC4937E47E19DCD1360 /* Mona-Sans-SemiBold.ttf */,
+				49FCD0689D6941EB9AC1F54E /* Mona-Sans-SemiBoldItalic.ttf */,
+				256CF50B0758452A80C56917 /* Mona-Sans-SemiBoldNarrow.ttf */,
+				E5D41C46A9FC4AEBA8F74130 /* Mona-Sans-SemiBoldNarrowItalic.ttf */,
+				C2CAFE9954DD452980642F0A /* Mona-Sans-SemiBoldWide.ttf */,
+				B9AF8F7DCB1646888F40778E /* Mona-Sans-SemiBoldWideItalic.ttf */,
+				43EA0EEBA510483A8015D03B /* Mona-Sans-UltraLight.ttf */,
+				BEC1C1D166CF48B5A6B331D5 /* Mona-Sans-UltraLightItalic.ttf */,
+				B176B4BDA27F4FB0BB5F1D27 /* Mona-Sans-UltraLightNarrow.ttf */,
+				E6A39E5839404560987E55F4 /* Mona-Sans-UltraLightNarrowItalic.ttf */,
+				ED8DE582EF5949D0AB7BF617 /* Mona-Sans-UltraLightWide.ttf */,
+				3BF5CF1C77B24F0EB739EC1B /* Mona-Sans-UltraLightWideItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -245,6 +398,54 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A1DEF16EBAC3437897F54EC9 /* Mona-Sans-Black.ttf in Resources */,
+				E013056F66AF45168D4B6908 /* Mona-Sans-BlackItalic.ttf in Resources */,
+				ED8E407E490F4FCEA76E1C5E /* Mona-Sans-BlackNarrow.ttf in Resources */,
+				30517E80A55D4C98B10B9308 /* Mona-Sans-BlackNarrowItalic.ttf in Resources */,
+				5DC76A80601B45118EEF8416 /* Mona-Sans-BlackWide.ttf in Resources */,
+				91B2A9237A494AC2A923863D /* Mona-Sans-BlackWideItalic.ttf in Resources */,
+				AD5E695D16BE40BBBED7E553 /* Mona-Sans-Bold.ttf in Resources */,
+				B6D8C21711C04EA3B9792928 /* Mona-Sans-BoldItalic.ttf in Resources */,
+				635F85D7D3D24090917C33A9 /* Mona-Sans-BoldNarrow.ttf in Resources */,
+				4F774122F054413ABCD28D2B /* Mona-Sans-BoldNarrowItalic.ttf in Resources */,
+				34AF0BC6C7A24120BD210E7B /* Mona-Sans-BoldWide.ttf in Resources */,
+				400FF439B0A3494A8FA38BB0 /* Mona-Sans-BoldWideItalic.ttf in Resources */,
+				DFA09BE1EC3642ABA474E102 /* Mona-Sans-ExtraBold.ttf in Resources */,
+				A3F1DBB0DF754D21A4C463BD /* Mona-Sans-ExtraBoldItalic.ttf in Resources */,
+				07C9C3CFB2B14A8AB60B3515 /* Mona-Sans-ExtraBoldNarrow.ttf in Resources */,
+				579A97751C8240A080463140 /* Mona-Sans-ExtraBoldNarrowItalic.ttf in Resources */,
+				899F8C23E3F84D3CA8F2A500 /* Mona-Sans-ExtraBoldWide.ttf in Resources */,
+				FD99AC4DE5FC49319B377F8E /* Mona-Sans-ExtraBoldWideItalic.ttf in Resources */,
+				1B7731E201504EE49475F824 /* Mona-Sans-Light.ttf in Resources */,
+				C8E3C4DC65064683ADB7CBBF /* Mona-Sans-LightItalic.ttf in Resources */,
+				69238530C1854961AE5E781E /* Mona-Sans-LightNarrow.ttf in Resources */,
+				3E7AC60163164834B9638D1F /* Mona-Sans-LightNarrowItalic.ttf in Resources */,
+				A26E94BCB1F043C88D0DEA5B /* Mona-Sans-LightWide.ttf in Resources */,
+				205FCCF74562441A9B37B161 /* Mona-Sans-LightWideItalic.ttf in Resources */,
+				503928882CDD49F6A0C096D0 /* Mona-Sans-Medium.ttf in Resources */,
+				E995FE121BB24C64B7310ADC /* Mona-Sans-MediumItalic.ttf in Resources */,
+				4D7421B53EE34DF59BBCC8A0 /* Mona-Sans-MediumNarrow.ttf in Resources */,
+				592CE17D21D840DA9641BE55 /* Mona-Sans-MediumNarrowItalic.ttf in Resources */,
+				E0AC11425F2C480FA1ABBC77 /* Mona-Sans-MediumWide.ttf in Resources */,
+				3FDDF43FC0954B30BC0F8544 /* Mona-Sans-MediumWideItalic.ttf in Resources */,
+				28A584F24FD74032ACEC3423 /* Mona-Sans-Regular.ttf in Resources */,
+				A721A09D22534B0CAEC236F3 /* Mona-Sans-RegularItalic.ttf in Resources */,
+				123EE1DE61C14A3AB4B2AD6C /* Mona-Sans-RegularNarrow.ttf in Resources */,
+				AE12FA9BD64945A9994F6FC7 /* Mona-Sans-RegularNarrowItalic.ttf in Resources */,
+				F678542B2FF440BE8283ABEF /* Mona-Sans-RegularWide.ttf in Resources */,
+				5851E33B8F164061BB4289CD /* Mona-Sans-RegularWideItalic.ttf in Resources */,
+				E351B3B02EEE4A4EA1A2A42F /* Mona-Sans-SemiBold.ttf in Resources */,
+				48E4A8DBB1B1472384673109 /* Mona-Sans-SemiBoldItalic.ttf in Resources */,
+				4EAC0300AA0B44BAA4A005FD /* Mona-Sans-SemiBoldNarrow.ttf in Resources */,
+				2C77916833184126A77BA34A /* Mona-Sans-SemiBoldNarrowItalic.ttf in Resources */,
+				5A09AE9397E24BABBA567BD6 /* Mona-Sans-SemiBoldWide.ttf in Resources */,
+				97BAD47DCF2D489FAE95F912 /* Mona-Sans-SemiBoldWideItalic.ttf in Resources */,
+				CD2F250F96994B29B07E9AD0 /* Mona-Sans-UltraLight.ttf in Resources */,
+				61D54C1CA8654B7781978CE1 /* Mona-Sans-UltraLightItalic.ttf in Resources */,
+				34F34FF2BA404EBEB97A7A79 /* Mona-Sans-UltraLightNarrow.ttf in Resources */,
+				09B8020E392F44D882F9F203 /* Mona-Sans-UltraLightNarrowItalic.ttf in Resources */,
+				DD57EFE00E4D4E4EA1FBFA68 /* Mona-Sans-UltraLightWide.ttf in Resources */,
+				A916747D45994F69ACB62EE2 /* Mona-Sans-UltraLightWideItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,197 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Mona-Sans-Black.ttf",
+      "sha1": "103847547b5726b5901cecf1d323f31c857e5ca0"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-BlackItalic.ttf",
+      "sha1": "8c0a246aaa00332cda53eb017e7a4ab222482e60"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-BlackNarrow.ttf",
+      "sha1": "495a47efdfd117701fe49db1a3ec79c5ac3680e6"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-BlackNarrowItalic.ttf",
+      "sha1": "b9997605a9d5090f2069c37af0fea059b68f4b1a"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-BlackWide.ttf",
+      "sha1": "c7be876ded51f6efc42a3907cffafa24dc428f6a"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-BlackWideItalic.ttf",
+      "sha1": "1794d9c1554c4da20ccc390ba6dadc7a4abafa58"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-Bold.ttf",
+      "sha1": "5a40107936da6de11ac31ec7b376cc2dcb2320e5"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-BoldItalic.ttf",
+      "sha1": "37be727a3df72bd27bfe5637bc3976e67db6a253"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-BoldNarrow.ttf",
+      "sha1": "bef9bb213a29fcd83f0ea11dc2b8873bcc9861cd"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-BoldNarrowItalic.ttf",
+      "sha1": "163c052b4d6aa201d0438ab9fa63a3b6e51a880f"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-BoldWide.ttf",
+      "sha1": "68454fcd3a6d4596f83f9d929ff0dd1c492f619c"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-BoldWideItalic.ttf",
+      "sha1": "9b4ceed12526e2c52034ab64662c53a197cc680f"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-ExtraBold.ttf",
+      "sha1": "1eafea057043be19c58e2c446ac54dd43a29ccc0"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-ExtraBoldItalic.ttf",
+      "sha1": "7a90a0abc0d22439067c63085992057c228664ea"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-ExtraBoldNarrow.ttf",
+      "sha1": "885699a4469d4f0cd4f3bcb7a87398652f7ae8d4"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-ExtraBoldNarrowItalic.ttf",
+      "sha1": "de8d87c168201372fb33f0d5073f594e110b3385"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-ExtraBoldWide.ttf",
+      "sha1": "c807e2b373b988cab98eff6bb47577102cbab6a9"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-ExtraBoldWideItalic.ttf",
+      "sha1": "dad5b565ddebf703f2d6629f9177f7f6450bd0ee"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-Light.ttf",
+      "sha1": "3283278aa54979f650e937c2d6359bbc41d35471"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-LightItalic.ttf",
+      "sha1": "c55233d8901dc9ab3131cd717fb43e860b2e887a"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-LightNarrow.ttf",
+      "sha1": "6217a0bc4920f17f32cfb9860a5350248c30cf63"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-LightNarrowItalic.ttf",
+      "sha1": "8863916b79df368fc6c18514111c345a0e5155c3"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-LightWide.ttf",
+      "sha1": "fcfde0dc194e6ba5504f7fba4d37f7c94a8aaaf5"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-LightWideItalic.ttf",
+      "sha1": "7c8209103c0be46e186ed3e7c20eaf4838e0c526"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-Medium.ttf",
+      "sha1": "357e19c85f50a69bd6f1b616b4df228acea17efe"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-MediumItalic.ttf",
+      "sha1": "f9a6b832dbc1e059b26f86d0927857b253fdc1eb"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-MediumNarrow.ttf",
+      "sha1": "b84e66876c0ce0db4e8f358047505bed1f53b53c"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-MediumNarrowItalic.ttf",
+      "sha1": "411d6c5821843c80d6765121892ebf730136fbfc"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-MediumWide.ttf",
+      "sha1": "af318a674173567ef604609f28f9582848bbcdb4"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-MediumWideItalic.ttf",
+      "sha1": "d727f97a51b4c0925ea02e1147d7c80d047d1805"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-Regular.ttf",
+      "sha1": "e49bd5b6f31933d56e63de0489fc919a06e7f78c"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-RegularItalic.ttf",
+      "sha1": "319e1586964acdb4388d324d361e0588d5b49f23"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-RegularNarrow.ttf",
+      "sha1": "07854daf997b3f4bc6d3fda6028cfd15cb1637a9"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-RegularNarrowItalic.ttf",
+      "sha1": "6763dae5e8e9d6a56dad47456ece5db4cdb39b5a"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-RegularWide.ttf",
+      "sha1": "5075e06e3f43ac5cf25dcea0a205a5ce3cf998fd"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-RegularWideItalic.ttf",
+      "sha1": "cfabf15d54ce75b2e528d677cde4f929c2dac993"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-SemiBold.ttf",
+      "sha1": "221dfcd7ea67a5dab3b2051df607a8bfddab47cd"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-SemiBoldItalic.ttf",
+      "sha1": "a21db0eba26b18e1a21f340a727c3f2148e5376b"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-SemiBoldNarrow.ttf",
+      "sha1": "68826cc57c380879c166ae80b6480aa80ebb0476"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-SemiBoldNarrowItalic.ttf",
+      "sha1": "24f503963d9c1c82138610f77f2b1a514fe8e4a5"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-SemiBoldWide.ttf",
+      "sha1": "8a472e9e79aded1690ebc77c118a404829bcf4b4"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-SemiBoldWideItalic.ttf",
+      "sha1": "d24aa17e3e8971af45fe7e44bed0131696bc6249"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-UltraLight.ttf",
+      "sha1": "8b9a805a18ff66b76b9c27fb81236cff2e72cdeb"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-UltraLightItalic.ttf",
+      "sha1": "a0f43e5bf3cbe666cc4cff411a32fd7cc07aad7c"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-UltraLightNarrow.ttf",
+      "sha1": "20fef14604b3833530a229b4153ef0716b680128"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-UltraLightNarrowItalic.ttf",
+      "sha1": "710c589281174bcdbafcfd813775cac7d9d76245"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-UltraLightWide.ttf",
+      "sha1": "3809263bfbeb848cb7ffac2ad73eb39f2e49eec7"
+    },
+    {
+      "path": "assets/fonts/Mona-Sans-UltraLightWideItalic.ttf",
+      "sha1": "0ba372d91280972bcb0c54b20760502f976e7d16"
+    }
+  ]
+}

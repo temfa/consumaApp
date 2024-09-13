@@ -26,14 +26,13 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
 		<key>NSAllowsArbitraryLoads</key>
 		<false/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -48,5 +47,56 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Mona-Sans-Black.ttf</string>
+		<string>Mona-Sans-BlackItalic.ttf</string>
+		<string>Mona-Sans-BlackNarrow.ttf</string>
+		<string>Mona-Sans-BlackNarrowItalic.ttf</string>
+		<string>Mona-Sans-BlackWide.ttf</string>
+		<string>Mona-Sans-BlackWideItalic.ttf</string>
+		<string>Mona-Sans-Bold.ttf</string>
+		<string>Mona-Sans-BoldItalic.ttf</string>
+		<string>Mona-Sans-BoldNarrow.ttf</string>
+		<string>Mona-Sans-BoldNarrowItalic.ttf</string>
+		<string>Mona-Sans-BoldWide.ttf</string>
+		<string>Mona-Sans-BoldWideItalic.ttf</string>
+		<string>Mona-Sans-ExtraBold.ttf</string>
+		<string>Mona-Sans-ExtraBoldItalic.ttf</string>
+		<string>Mona-Sans-ExtraBoldNarrow.ttf</string>
+		<string>Mona-Sans-ExtraBoldNarrowItalic.ttf</string>
+		<string>Mona-Sans-ExtraBoldWide.ttf</string>
+		<string>Mona-Sans-ExtraBoldWideItalic.ttf</string>
+		<string>Mona-Sans-Light.ttf</string>
+		<string>Mona-Sans-LightItalic.ttf</string>
+		<string>Mona-Sans-LightNarrow.ttf</string>
+		<string>Mona-Sans-LightNarrowItalic.ttf</string>
+		<string>Mona-Sans-LightWide.ttf</string>
+		<string>Mona-Sans-LightWideItalic.ttf</string>
+		<string>Mona-Sans-Medium.ttf</string>
+		<string>Mona-Sans-MediumItalic.ttf</string>
+		<string>Mona-Sans-MediumNarrow.ttf</string>
+		<string>Mona-Sans-MediumNarrowItalic.ttf</string>
+		<string>Mona-Sans-MediumWide.ttf</string>
+		<string>Mona-Sans-MediumWideItalic.ttf</string>
+		<string>Mona-Sans-Regular.ttf</string>
+		<string>Mona-Sans-RegularItalic.ttf</string>
+		<string>Mona-Sans-RegularNarrow.ttf</string>
+		<string>Mona-Sans-RegularNarrowItalic.ttf</string>
+		<string>Mona-Sans-RegularWide.ttf</string>
+		<string>Mona-Sans-RegularWideItalic.ttf</string>
+		<string>Mona-Sans-SemiBold.ttf</string>
+		<string>Mona-Sans-SemiBoldItalic.ttf</string>
+		<string>Mona-Sans-SemiBoldNarrow.ttf</string>
+		<string>Mona-Sans-SemiBoldNarrowItalic.ttf</string>
+		<string>Mona-Sans-SemiBoldWide.ttf</string>
+		<string>Mona-Sans-SemiBoldWideItalic.ttf</string>
+		<string>Mona-Sans-UltraLight.ttf</string>
+		<string>Mona-Sans-UltraLightItalic.ttf</string>
+		<string>Mona-Sans-UltraLightNarrow.ttf</string>
+		<string>Mona-Sans-UltraLightNarrowItalic.ttf</string>
+		<string>Mona-Sans-UltraLightWide.ttf</string>
+		<string>Mona-Sans-UltraLightWideItalic.ttf</string>
+	</array>
 </dict>
 </plist>

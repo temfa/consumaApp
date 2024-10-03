@@ -23,14 +23,6 @@ const SearchScreen = () => {
       <Text style={styles.header}>Search</Text>
       <View style={styles.searchWrapper}>
         <View style={styles.searchContainer}>
-          <TouchableOpacity style={styles.icon} onPress={() => setSubmit(true)}>
-            <Icon
-              type={Icons.Feather}
-              name="search"
-              size={22}
-              color={colors.primaryGreen}
-            />
-          </TouchableOpacity>
           <TextInput
             style={styles.searchInput}
             placeholder="Search for foods, grocery, restaurant"
@@ -43,14 +35,22 @@ const SearchScreen = () => {
               if (e.nativeEvent.key === 'Enter') setSubmit(true);
             }}
           />
-          <View style={styles.icon}>
+          {/* <View style={styles.icon}>
             <Icon
               type={Icons.FontAwesome5}
               name="sliders-h"
               size={22}
               color={colors.primaryGreen}
             />
-          </View>
+          </View> */}
+          <TouchableOpacity style={styles.icon} onPress={() => setSubmit(true)}>
+            <Icon
+              type={Icons.Feather}
+              name="search"
+              size={22}
+              color={colors.primaryGreen}
+            />
+          </TouchableOpacity>
         </View>
         {submit && (
           <>

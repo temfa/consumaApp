@@ -1,41 +1,28 @@
 /* eslint-disable react-native/no-inline-styles */
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React, {useState} from 'react';
 import {colors} from '../../constants/colors';
 import {fonts} from '../../constants/fonts';
 import InfoText from '../../components/InfoText';
+import {cart} from '../../utils/data';
+import SingleCart from '../../components/SingleCart';
+import Modals from '../../components/Modals';
+import OrderHeader from '../../components/OrderHeader';
+import Button from '../../components/Button';
 
-const OrdersScreen = () => {
-  const [active, setActive] = useState('Cart');
+const OrdersScreen = ({navigation}: {navigation: any}) => {
+  const [visible, setVisible] = useState(false);
+
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Orders</Text>
-      <View style={styles.heading}>
-        <Text
-          style={[
-            styles.headingText,
-            {
-              color: active === 'Cart' ? colors.primaryGreen : '#555555',
-              borderBottomWidth: active === 'Cart' ? 2 : 0,
-              borderBottomColor: '#58D189',
-            },
-          ]}
-          onPress={() => setActive('Cart')}>
-          Cart
-        </Text>
-        <Text
-          style={[
-            styles.headingText,
-            {
-              color: active === 'History' ? colors.primaryGreen : '#555555',
-              borderBottomWidth: active === 'History' ? 2 : 0,
-              borderBottomColor: '#58D189',
-            },
-          ]}
-          onPress={() => setActive('History')}>
-          History
-        </Text>
-      </View>
+      <OrderHeader active="Cart" />
       <View style={styles.totalItems}>
         <Text style={styles.totalItemsText}>
           Total Items <Text style={{fontFamily: fonts.Bold}}>(3)</Text>
@@ -51,7 +38,52 @@ const OrdersScreen = () => {
           <Text style={styles.total}>₦220,000</Text>
         </View>
       </View>
-      <InfoText text="This does not include delivery fee. Delivery fee will be determined once location is confirmed" />
+      <View style={{paddingHorizontal: 16}}>
+        <InfoText text="This does not include delivery fee. Delivery fee will be determined once location is confirmed" />
+      </View>
+      <ScrollView style={styles.cartContainer}>
+        {cart?.map((item, index) => {
+          return (
+            <SingleCart
+              key={index}
+              add={() =>
+                (cart[Number(item.id)].number = cart[Number(item.id)].number) +
+                1
+              }
+              minus={() => {}}
+              name={item.title}
+              number={item.number}
+              img={item.image}
+              price={item.price}
+              size={item.size}
+            />
+          );
+        })}
+      </ScrollView>
+      <Button
+        action={() => setVisible(true)}
+        buttonText="Proceed to checkout"
+      />
+      <Modals
+        visible={visible}
+        points={['25%', '50%']}
+        setFalse={() => setVisible(false)}>
+        <View style={styles.contentContainer}>
+          <Image source={require('../../assets/location.png')} />
+          <TouchableOpacity
+            style={styles.shareContainer}
+            onPress={() => {
+              setVisible(false);
+              navigation.navigate('Checkout');
+            }}>
+            <Text style={styles.shareText}>Share Location</Text>
+          </TouchableOpacity>
+          <Text style={styles.style}>
+            Kindly share your location so we get ur exact address. We are happy
+            to have you here.
+          </Text>
+        </View>
+      </Modals>
     </View>
   );
 };
@@ -63,26 +95,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.white,
     paddingTop: 16,
-  },
-  header: {
-    fontFamily: fonts.SemiBold,
-    fontSize: 14,
-    lineHeight: 16.8,
-    color: '#0D0D0D',
-    textAlign: 'center',
-  },
-  heading: {
-    flexDirection: 'row',
-    width: '100%',
-    marginTop: 8,
-  },
-  headingText: {
-    width: '50%',
-    textAlign: 'center',
-    paddingVertical: 16,
-    fontFamily: fonts.SemiBold,
-    fontSize: 14,
-    lineHeight: 16.8,
   },
   totalItems: {
     flexDirection: 'row',
@@ -133,5 +145,33 @@ const styles = StyleSheet.create({
     fontFamily: fonts.SemiBold,
     fontSize: 14,
     lineHeight: 16.8,
+  },
+  cartContainer: {
+    paddingHorizontal: 16,
+    marginTop: 16,
+    height: 250,
+    paddingBottom: 16,
+  },
+  contentContainer: {alignItems: 'center', gap: 16},
+  shareContainer: {
+    width: 185,
+    paddingVertical: 14,
+    backgroundColor: colors.primaryGreen,
+    borderRadius: 6,
+    alignItems: 'center',
+  },
+  shareText: {
+    color: '#F2F2F2',
+    fontFamily: fonts.SemiBold,
+    lineHeight: 19.2,
+    fontSize: 16,
+  },
+  style: {
+    width: 262,
+    fontSize: 12,
+    lineHeight: 14.4,
+    fontFamily: fonts.Medium,
+    color: '#555555',
+    textAlign: 'center',
   },
 });

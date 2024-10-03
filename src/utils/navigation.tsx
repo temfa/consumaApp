@@ -18,6 +18,9 @@ import {fonts} from '../constants/fonts';
 import * as Animatable from 'react-native-animatable';
 import LeaderboardScreen from '../screens/Profile/LeaderboardScreen';
 import WishlistScreen from '../screens/Profile/WishlistScreen';
+import CheckoutScreen from '../screens/Orders/CheckoutScreen';
+import PaymentScreen from '../screens/Orders/PaymentScreen';
+import ConfirmOrderScreen from '../screens/Orders/ConfirmOrderScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -51,6 +54,20 @@ const ProfileStack = () => {
     </Stack.Navigator>
   );
 };
+const OrderStack = () => {
+  return (
+    <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen
+        name="OrderPage"
+        component={OrdersScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen name="Checkout" component={CheckoutScreen} />
+      <Stack.Screen name="Payment" component={PaymentScreen} />
+      <Stack.Screen name="Confirm" component={ConfirmOrderScreen} />
+    </Stack.Navigator>
+  );
+};
 
 const buttonTabData = [
   {
@@ -67,7 +84,7 @@ const buttonTabData = [
   },
   {
     name: 'Orders',
-    component: OrdersScreen,
+    component: OrderStack,
     type: Icons.Ionicons,
     iconName: 'bag',
   },

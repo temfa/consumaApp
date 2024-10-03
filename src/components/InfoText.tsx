@@ -30,5 +30,6 @@ const styles = StyleSheet.create({
     lineHeight: 14.4,
     color: '#3A70E2',
     fontFamily: fonts.SemiBold,
+    width: '85%',
   },
 });

@@ -1,42 +1,55 @@
-import {StyleSheet, View, Modal} from 'react-native';
-import React from 'react';
+/* eslint-disable curly */
+import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import {BottomSheetModal, BottomSheetView} from '@gorhom/bottom-sheet';
 
 const Modals = ({
   children,
   visible,
-  action,
+  points,
+  setFalse,
 }: {
   children: any;
   visible: boolean;
-  action: () => void;
+  points?: string[] | number[];
+  setFalse: () => void;
 }) => {
+  const bottomSheetModalRef = useRef<BottomSheetModal>(null);
+  const [number, setNumber] = useState(1);
+
+  // variables
+  const snapPoints = useMemo(() => points, [points]);
+
+  // callbacks
+  const handlePresentModalPress = useCallback(() => {
+    bottomSheetModalRef.current?.present();
+  }, []);
+  const handleSheetChanges = useCallback(
+    (index: number) => {
+      console.log('handleSheetChanges', index);
+      if (index < 1) {
+        setNumber(1);
+        bottomSheetModalRef.current?.close();
+        setFalse();
+      }
+    },
+    [setFalse],
+  );
+
+  useEffect(() => {
+    if (visible) handlePresentModalPress();
+    else bottomSheetModalRef.current?.close();
+  }, [visible, handlePresentModalPress]);
+
   return (
-    <Modal
-      transparent={true}
-      visible={visible}
-      animationType="slide"
-      onRequestClose={action}>
-      <View style={styles.modalContainer}>
-        <View style={styles.bottomSheet}>{children}</View>
-      </View>
-    </Modal>
+    <BottomSheetModal
+      ref={bottomSheetModalRef}
+      index={number}
+      snapPoints={snapPoints}
+      // enableDynamicSizing={true}
+      onChange={handleSheetChanges}>
+      <BottomSheetView>{children}</BottomSheetView>
+    </BottomSheetModal>
   );
 };
 
 export default Modals;
-
-const styles = StyleSheet.create({
-  modalContainer: {
-    flex: 1,
-    justifyContent: 'flex-end',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  },
-  bottomSheet: {
-    backgroundColor: '#fff',
-    paddingHorizontal: 16,
-    height: 478,
-    paddingVertical: 24,
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-  },
-});

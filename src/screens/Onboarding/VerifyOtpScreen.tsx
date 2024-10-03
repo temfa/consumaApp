@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React, {useState} from 'react';
+import React, {RefObject, useRef, useState} from 'react';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import {fonts} from '../../constants/fonts';
 import {colors} from '../../constants/colors';
@@ -15,6 +15,31 @@ import PrimaryButton from '../../components/PrimaryButton';
 const VerifyOtpScreen = ({navigation}: {navigation: any}) => {
   const data = [1, 2, 3, 4, 5];
   const [active, setActive] = useState(0);
+  const [codes, setCodes] = useState<string[] | undefined>(Array(6).fill(''));
+  const refs: RefObject<TextInput>[] = [
+    useRef<TextInput>(null),
+    useRef<TextInput>(null),
+    useRef<TextInput>(null),
+    useRef<TextInput>(null),
+    useRef<TextInput>(null),
+    useRef<TextInput>(null),
+  ];
+
+  const onChangeCode = (text: string, index: number) => {
+    if (text.length > 1) {
+      const newCodes = text.split('');
+      setCodes(newCodes);
+      refs[5]!.current?.focus();
+      return;
+    }
+    const newCodes = [...codes!];
+    newCodes[index] = text;
+    setCodes(newCodes);
+    if (text !== '' && index < 5) {
+      refs[index + 1]!.current?.focus();
+    }
+  };
+
   return (
     <View style={styles.container}>
       <TouchableOpacity
@@ -41,10 +66,19 @@ const VerifyOtpScreen = ({navigation}: {navigation: any}) => {
                   borderColor: active === index ? '#43CC7A' : '',
                 }}
                 textAlign="center"
+                autoComplete="one-time-code"
+                ref={refs[index]}
                 maxLength={1}
                 keyboardType="number-pad"
                 focusable={true}
+                onChangeText={text => onChangeCode(text, index)}
                 onFocus={() => setActive(index)}
+                onKeyPress={({nativeEvent: {key}}) => {
+                  if (key === 'Backspace' && index > 0) {
+                    onChangeCode('', index - 1);
+                    refs[index - 1]!.current!.focus();
+                  }
+                }}
               />
             );
           })}
@@ -122,7 +156,7 @@ const styles = StyleSheet.create({
     gap: 11,
   },
   inputTexts: {
-    width: 65,
+    width: '17.5%',
     height: 65,
     borderRadius: 6,
     backgroundColor: '#EEEEEE',

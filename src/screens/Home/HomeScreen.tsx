@@ -1,5 +1,5 @@
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import {Image, ScrollView, StyleSheet, Text, View} from 'react-native';
+import React, {useState} from 'react';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
 import {colors} from '../../constants/colors';
@@ -8,8 +8,12 @@ import BestDeals from '../../components/BestDeals';
 import Products from '../../components/Products';
 import Restaurants from '../../components/Restaurants';
 import Notification from '../../components/Notification';
+import Modals from '../../components/Modals';
+import Icon, {Icons} from '../../components/Icons';
+import {TouchableOpacity} from 'react-native';
 
 const HomeScreen = () => {
+  const [visible, setVisible] = useState(true);
   const product = [
     {
       id: '1',
@@ -76,6 +80,33 @@ const HomeScreen = () => {
         <Restaurants />
       </ScrollView>
       <Notification />
+      <Modals
+        visible={visible}
+        points={['25%', '50%']}
+        setFalse={() => setVisible(false)}>
+        <View style={styles.contentContainer}>
+          <TouchableOpacity style={styles.close}>
+            <TouchableOpacity onPress={() => setVisible(false)}>
+              <Icon
+                type={Icons.Ionicons}
+                name="close-circle-outline"
+                size={24}
+                color="#555555"
+                style={styles.closeIcon}
+              />
+            </TouchableOpacity>
+          </TouchableOpacity>
+          <Image source={require('../../assets/welcomeHome.png')} />
+          <Text style={styles.welcomeModalText1}>
+            Welcome to{' '}
+            <Text style={{color: colors.primaryGreen}}> Consuma!</Text>
+          </Text>
+          <Text style={styles.welcomeModalText2}>
+            Never forget to eat. We'll ensure you're always reminded to eat your
+            meals on time.
+          </Text>
+        </View>
+      </Modals>
     </View>
   );
 };
@@ -149,5 +180,30 @@ const styles = StyleSheet.create({
     fontSize: 12,
     lineHeight: 14.4,
     color: colors.primaryGreen,
+  },
+  contentContainer: {alignItems: 'center', gap: 16, width: '100%'},
+  close: {
+    width: '100%',
+    justifyContent: 'flex-end',
+    alignItems: 'flex-end',
+    paddingHorizontal: 16,
+  },
+  closeIcon: {
+    width: 24,
+  },
+  welcomeModalText1: {
+    fontFamily: fonts.SemiBold,
+    fontSize: 16,
+    lineHeight: 19.2,
+    textAlign: 'center',
+    color: '#252525',
+  },
+  welcomeModalText2: {
+    width: 268,
+    textAlign: 'center',
+    color: '#3D3D3D',
+    fontSize: 12,
+    fontFamily: fonts.Regular,
+    lineHeight: 14.4,
   },
 });

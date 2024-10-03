@@ -132,6 +132,21 @@ export const profileLinks = [
   },
 ];
 
+export const paymentMethod = [
+  {
+    bank: 'Guaranty Trust Bank',
+    account: '**** **** **** *035',
+    image: require('../assets/master.png'),
+    id: 'gtb',
+  },
+  {
+    bank: 'First Bank of Nigeria ',
+    account: '**** **** **** *082',
+    image: require('../assets/visa.png'),
+    id: 'fbn',
+  },
+];
+
 export const leaderboards = [
   {
     id: '1',
@@ -251,5 +266,40 @@ export const productData = [
     title: 'Devon’s King’s Oil',
     size: '3L',
     price: '5,000',
+  },
+];
+
+export const cart = [
+  {
+    id: '1',
+    image: require('../assets/oil.png'),
+    title: 'Devon’s King’s Oil',
+    size: '3L',
+    price: '5,000',
+    number: 1,
+  },
+  {
+    id: '2',
+    image: require('../assets/ricebag.png'),
+    title: 'East End Basmati Rice',
+    size: '1kg',
+    price: '60,000',
+    number: 1,
+  },
+  {
+    id: '3',
+    image: require('../assets/oil.png'),
+    title: 'Mamador’s Vegetable Oil',
+    size: '3L',
+    price: '5,000',
+    number: 1,
+  },
+  {
+    id: '4',
+    image: require('../assets/oil.png'),
+    title: 'Mamador’s Vegetable Oil',
+    size: '3L',
+    price: '5,000',
+    number: 1,
   },
 ];

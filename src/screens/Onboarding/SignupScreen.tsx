@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 /* eslint-disable react-native/no-inline-styles */
 import {Image, StyleSheet, Text, TextInput, View} from 'react-native';
 import React, {useState} from 'react';
@@ -33,6 +34,10 @@ const SignupScreen = ({navigation}: {navigation: any}) => {
               disabled={false}
               value={toggleCheckBox}
               onValueChange={newValue => setToggleCheckBox(newValue)}
+              tintColor={colors.primaryGreen}
+              tintColors={{true: colors.primaryGreen}}
+              boxType="square"
+              onCheckColor={colors.primaryGreen}
             />
             <Text style={styles.checkboxText}>
               By continuing I read agree to{' '}
@@ -112,10 +117,12 @@ const styles = StyleSheet.create({
     gap: 14,
     alignItems: 'center',
     width: '100%',
+    // overflow: 'hidden',
   },
   checkboxText: {
     fontSize: 14,
     fontFamily: fonts.Medium,
+    color: '#9E9E9E',
   },
   loginOr: {
     marginTop: 97,

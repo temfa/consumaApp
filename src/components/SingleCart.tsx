@@ -10,6 +10,7 @@ import {
 import React, {FC} from 'react';
 import Icon, {Icons} from './Icons';
 import {fonts} from '../constants/fonts';
+import {truncateText} from '../utils/helper';
 
 type Props = {
   img: ImageSourcePropType;
@@ -36,9 +37,7 @@ const SingleCart: FC<Props> = ({
       <View style={styles.singleCartDetails}>
         <View style={styles.singleCartTitle}>
           <View style={styles.singleCartName}>
-            <Text numberOfLines={2} ellipsizeMode="clip" style={styles.name}>
-              {name}
-            </Text>
+            <Text style={styles.name}>{truncateText(name, 15)}</Text>
             <Text style={[styles.name, {color: '#555555'}]}>{size}</Text>
           </View>
           <Icon

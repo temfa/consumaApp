@@ -6,20 +6,19 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React from 'react';
+import React, {FC} from 'react';
 import Modals from './Modals';
 import {fonts} from '../constants/fonts';
 import {colors} from '../constants/colors';
 
-const ProfileDetails = ({
-  visible,
-  action,
-}: {
+export type ModalProps = {
   visible: boolean;
   action: () => void;
-}) => {
+};
+
+const ProfileDetails: FC<ModalProps> = ({visible, action}) => {
   return (
-    <Modals visible={visible} action={action}>
+    <Modals visible={visible} setFalse={action} points={['50']}>
       <View style={styles.container}>
         <Text style={styles.header}>Profile</Text>
         <View style={styles.profileForm}>
@@ -95,6 +94,8 @@ export default ProfileDetails;
 const styles = StyleSheet.create({
   container: {
     gap: 24,
+    width: '90%',
+    marginHorizontal: 'auto',
   },
   header: {
     fontFamily: fonts.SemiBold,

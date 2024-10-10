@@ -1,6 +1,12 @@
+/* eslint-disable react/no-unstable-nested-components */
+/* eslint-disable react-native/no-inline-styles */
 /* eslint-disable curly */
 import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
-import {BottomSheetModal, BottomSheetView} from '@gorhom/bottom-sheet';
+import {
+  BottomSheetBackdrop,
+  BottomSheetModal,
+  BottomSheetView,
+} from '@gorhom/bottom-sheet';
 
 const Modals = ({
   children,
@@ -43,11 +49,22 @@ const Modals = ({
   return (
     <BottomSheetModal
       ref={bottomSheetModalRef}
+      enableDynamicSizing={true}
       index={number}
       snapPoints={snapPoints}
+      backdropComponent={props => (
+        <BottomSheetBackdrop
+          {...props}
+          disappearsOnIndex={-1}
+          appearsOnIndex={0}
+          opacity={0.6}
+        />
+      )}
+      // style={{elevation: 3}}
+      backgroundStyle={{backgroundColor: '#FBFEFC'}}
       // enableDynamicSizing={true}
       onChange={handleSheetChanges}>
-      <BottomSheetView>{children}</BottomSheetView>
+      <BottomSheetView style={{paddingBottom: 35}}>{children}</BottomSheetView>
     </BottomSheetModal>
   );
 };

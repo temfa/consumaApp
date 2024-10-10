@@ -303,3 +303,74 @@ export const cart = [
     number: 1,
   },
 ];
+
+export const orders = [
+  {
+    id: '1',
+    image: require('../assets/ricebag.png'),
+    title: 'East End Basmati Rice',
+    price: '60,000',
+    quantity: 7,
+    date: '12/09/2023, 3:30pm',
+    address: 'Block 234, point 4, Ajah Lekki Estate Phase 1',
+    status: 'On-going',
+  },
+  {
+    id: '2',
+    image: require('../assets/ricebag.png'),
+    title: 'East End Basmati Rice',
+    price: '60,000',
+    quantity: 7,
+    date: '12/09/2023, 3:30pm',
+    address: 'Block 234, point 4, Ajah Lekki Estate Phase 1',
+    status: 'Delivered',
+  },
+  {
+    id: '3',
+    image: require('../assets/oil.png'),
+    title: 'Mamador’s Vegetable Oil',
+    size: '3L',
+    price: '5,000',
+    quantity: 7,
+    date: '12/09/2023, 3:30pm',
+    address: 'Block 234, point 4, Ajah Lekki Estate Phase 1',
+    status: 'Cancelled',
+  },
+];
+
+export const addresses = [
+  'Block 234, admiral road,  Bourdilion bus-stop, lekki',
+  'Ajah Lekki Estate Phase 1',
+  'Block 234, admiral road,  Bourdilion bus-stop, lekki',
+];
+
+export const menuList = [
+  {
+    id: '1',
+    image: require('../assets/spag.png'),
+    title: 'Refuel Spaghetti Meal',
+    size: '1 Plate',
+    price: '2,100',
+  },
+  {
+    id: '2',
+    image: require('../assets/fried.png'),
+    title: 'Refuel Fried Rice Meal',
+    size: '1 Plate',
+    price: '2,100',
+  },
+  {
+    id: '3',
+    image: require('../assets/chicken.png'),
+    title: 'Full Flame Grilled Chicken',
+    size: '1 Plate',
+    price: '8,500',
+  },
+  {
+    id: '4',
+    image: require('../assets/turkey.png'),
+    title: 'Quarter Flame Grilled Chicken',
+    size: '1 Plate',
+    price: '2,700',
+  },
+];

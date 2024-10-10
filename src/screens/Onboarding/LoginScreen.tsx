@@ -1,19 +1,17 @@
-/* eslint-disable react-native/no-inline-styles */
 import {Image, StyleSheet, Text, TextInput, View} from 'react-native';
-import React, {useState} from 'react';
+import React from 'react';
 import {colors} from '../../constants/colors';
 import {fonts} from '../../constants/fonts';
-import CheckBox from '@react-native-community/checkbox';
+// import CheckBox from '@react-native-community/checkbox';
 import PrimaryButton from '../../components/PrimaryButton';
-import {TouchableOpacity} from 'react-native-gesture-handler';
 
-const SignupScreen = ({navigation}: {navigation: any}) => {
-  const [toggleCheckBox, setToggleCheckBox] = useState(false);
+const LoginScreen = ({navigation}: {navigation: any}) => {
+  // const [toggleCheckBox, setToggleCheckBox] = useState(false);
   return (
     <View style={styles.container}>
       <View style={styles.containerHeader}>
         <View style={styles.containerText}>
-          <Text style={styles.header}>Let’s get started!</Text>
+          <Text style={styles.header}>Welcome back!</Text>
           <Text style={styles.headerText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
             iaculis amet, est interdum.
@@ -29,7 +27,7 @@ const SignupScreen = ({navigation}: {navigation: any}) => {
               placeholderTextColor="#CFCFCF"
             />
           </View>
-          <View style={styles.checkbox}>
+          {/* <View style={styles.checkbox}>
             <CheckBox
               disabled={false}
               value={toggleCheckBox}
@@ -51,30 +49,26 @@ const SignupScreen = ({navigation}: {navigation: any}) => {
                 Privacy Policy. Terms and Condition
               </Text>
             </Text>
-          </View>
+          </View> */}
           <PrimaryButton
             title="Create Account"
-            action={() => navigation.navigate('VerifyOtp')}
-            active={toggleCheckBox}
+            action={() => navigation.navigate('HomeScreen')}
+            active={true}
           />
         </View>
       </View>
       <View style={styles.loginOr}>
-        <Text style={styles.loginWith}>Or have an account?</Text>
-        <View style={{width: '100%'}}>
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Login')}
-            style={styles.loginAs}>
-            <Image source={require('../../assets/profile-circle1.png')} />
-            <Text style={styles.loginText}>Login</Text>
-          </TouchableOpacity>
+        <Text style={styles.loginWith}>Don't have an account?</Text>
+        <View style={styles.loginAs}>
+          <Image source={require('../../assets/profile-circle1.png')} />
+          <Text style={styles.loginText}>Signup</Text>
         </View>
       </View>
     </View>
   );
 };
 
-export default SignupScreen;
+export default LoginScreen;
 
 const styles = StyleSheet.create({
   container: {
@@ -133,7 +127,6 @@ const styles = StyleSheet.create({
     marginTop: 97,
     gap: 32,
     alignItems: 'center',
-    width: '100%',
   },
   loginWith: {
     color: '#6E6E6E',

@@ -3294,6 +3294,7 @@ __metadata:
     react-native-screens: ^3.33.0
     react-native-splash-screen: ^3.3.0
     react-native-swiper: ^1.6.0
+    react-native-toast-message: ^2.2.1
     react-native-vector-icons: ^10.1.0
     react-test-renderer: 18.2.0
     typescript: 5.0.4
@@ -8418,6 +8419,16 @@ __metadata:
   dependencies:
     prop-types: ^15.5.10
   checksum: 21e7a270dce6d249f718377a8aa2578c9a89b2b076710f6a60dc849ace5b47ade9e071345607947e738c0fdb06b17d9dad6ef99a8f76d7072b13bf3655026225
+  languageName: node
+  linkType: hard
+
+"react-native-toast-message@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "react-native-toast-message@npm:2.2.1"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: c6b5d231b3b617b3d3d893023673534fe2cc0c5f32bb5fc4aecfe239e9de2fb9f0e9a4086d776e53daf3bc2376dce16dcec13e1b5cf1554dbf51808695fc2441
   languageName: node
   linkType: hard
 

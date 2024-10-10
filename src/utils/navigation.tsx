@@ -21,6 +21,8 @@ import WishlistScreen from '../screens/Profile/WishlistScreen';
 import CheckoutScreen from '../screens/Orders/CheckoutScreen';
 import PaymentScreen from '../screens/Orders/PaymentScreen';
 import ConfirmOrderScreen from '../screens/Orders/ConfirmOrderScreen';
+import OrderHistoryScreen from '../screens/Orders/OrderHistoryScreen';
+import RestaurantSingleScreen from '../screens/Home/RestaurantSingleScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -37,10 +39,15 @@ const HomeStack = () => {
       <Stack.Screen name="Food Store" component={FoodStoreScreen} />
       <Stack.Screen name="Recommended For You" component={ReconmendScreen} />
       <Stack.Screen name="Restaurant" component={RestaurantsScreen} />
+      <Stack.Screen
+        name="RestaurantSingle"
+        component={RestaurantSingleScreen}
+      />
       <Stack.Screen name="Notifications" component={NotificationScreen} />
     </Stack.Navigator>
   );
 };
+
 const ProfileStack = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: true}}>
@@ -65,6 +72,7 @@ const OrderStack = () => {
       <Stack.Screen name="Checkout" component={CheckoutScreen} />
       <Stack.Screen name="Payment" component={PaymentScreen} />
       <Stack.Screen name="Confirm" component={ConfirmOrderScreen} />
+      <Stack.Screen name="History" component={OrderHistoryScreen} />
     </Stack.Navigator>
   );
 };
@@ -105,13 +113,13 @@ const TabButton = (props: any) => {
     if (viewRef.current) {
       if (focused) {
         viewRef.current.animate({
-          0: {rotate: '0deg'},
-          1: {rotate: '360deg'},
+          0: {rotate: '0deg', marginTop: 0},
+          1: {rotate: '360deg', marginTop: -20},
         });
       } else {
         viewRef.current.animate({
-          0: {rotate: '360deg'},
-          1: {rotate: '0deg'},
+          0: {rotate: '360deg', marginTop: -20},
+          1: {rotate: '0deg', marginTop: 0},
         });
       }
     }

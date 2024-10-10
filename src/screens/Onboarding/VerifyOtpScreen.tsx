@@ -161,6 +161,7 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     backgroundColor: '#EEEEEE',
     fontSize: 32,
+    color: 'black',
   },
   resendCode: {
     marginTop: 140,

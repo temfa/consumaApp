@@ -96,7 +96,9 @@ const ProfileScreen = ({navigation}: {navigation: any}) => {
                 </TouchableOpacity>
               );
             })}
-            <View style={[styles.accountSingle, {backgroundColor: '#FEF2F2'}]}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Login')}
+              style={[styles.accountSingle, {backgroundColor: '#FEF2F2'}]}>
               <View style={styles.accountFirst}>
                 <View
                   style={[styles.accountPicture, {backgroundColor: '#FFEBEE'}]}>
@@ -104,7 +106,7 @@ const ProfileScreen = ({navigation}: {navigation: any}) => {
                 </View>
                 <Text style={styles.accountName}>Log Out</Text>
               </View>
-            </View>
+            </TouchableOpacity>
           </View>
         </View>
       </View>

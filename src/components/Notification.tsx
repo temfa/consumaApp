@@ -11,7 +11,7 @@ const Notification = () => {
     <TouchableOpacity
       style={styles.notificationWrapper}
       onPress={() => navigation.navigate('Notifications' as never)}>
-      <Ionicons name="bag" color={colors.white} size={32} style={styles.icon} />
+      <Ionicons name="bag" color={colors.white} size={20} style={styles.icon} />
       <Text style={styles.notificationText}>4</Text>
     </TouchableOpacity>
   );
@@ -21,8 +21,8 @@ export default Notification;
 
 const styles = StyleSheet.create({
   notificationWrapper: {
-    width: 70,
-    height: 56,
+    width: 60,
+    height: 60,
     borderRadius: 100,
     backgroundColor: '#43CC7A',
     flexDirection: 'row',
@@ -33,13 +33,14 @@ const styles = StyleSheet.create({
     right: 16,
   },
   icon: {
-    width: 32,
-    height: 32,
+    width: 20,
+    height: 20,
   },
   notificationText: {
-    fontSize: 20,
+    fontSize: 16,
     fontFamily: fonts.Bold,
     color: '#F5F5F5',
     lineHeight: 28,
+    marginTop: -20,
   },
 });

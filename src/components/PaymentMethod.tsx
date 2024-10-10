@@ -1,13 +1,18 @@
 /* eslint-disable react-native/no-inline-styles */
 import {Image, StyleSheet, Text, View} from 'react-native';
-import React, {useState} from 'react';
+import React, {FC, useState} from 'react';
 import {RadioButton} from 'react-native-paper';
 import {colors} from '../constants/colors';
 import {paymentMethod} from '../utils/data';
 import {fonts} from '../constants/fonts';
 
-const PaymentMethod = () => {
+type Props = {
+  setActive: (e: string) => void;
+};
+
+const PaymentMethod: FC<Props> = ({setActive}) => {
   const [selectedValue, setSelectedValue] = useState('');
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Payment Method</Text>
@@ -27,7 +32,10 @@ const PaymentMethod = () => {
               <RadioButton.Android
                 value={item.id}
                 status={selectedValue === item.id ? 'checked' : 'unchecked'}
-                onPress={() => setSelectedValue(item.id)}
+                onPress={() => {
+                  setSelectedValue(item.id);
+                  setActive(item.id);
+                }}
                 color={colors.primaryGreen}
               />
             </View>
@@ -51,7 +59,10 @@ const PaymentMethod = () => {
           <RadioButton.Android
             value="new"
             status={selectedValue === 'new' ? 'checked' : 'unchecked'}
-            onPress={() => setSelectedValue('new')}
+            onPress={() => {
+              setSelectedValue('new');
+              setActive('new');
+            }}
             color={colors.primaryGreen}
           />
         </View>
@@ -72,7 +83,10 @@ const PaymentMethod = () => {
           <RadioButton.Android
             value="send"
             status={selectedValue === 'send' ? 'checked' : 'unchecked'}
-            onPress={() => setSelectedValue('send')}
+            onPress={() => {
+              setSelectedValue('send');
+              setActive('send');
+            }}
             color={colors.primaryGreen}
           />
         </View>
@@ -92,7 +106,10 @@ const PaymentMethod = () => {
           <RadioButton.Android
             value="cash"
             status={selectedValue === 'cash' ? 'checked' : 'unchecked'}
-            onPress={() => setSelectedValue('cash')}
+            onPress={() => {
+              setSelectedValue('cash');
+              setActive('cash');
+            }}
             color={colors.primaryGreen}
           />
         </View>

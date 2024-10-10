@@ -10,7 +10,7 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import Notification from '../../components/Notification';
 import InfoText from '../../components/InfoText';
 
-const RestaurantsScreen = () => {
+const RestaurantsScreen = ({navigation}: {navigation: any}) => {
   return (
     <View style={styles.container}>
       <InfoText text="Vendors are displayed based on your nearest  location" />
@@ -33,6 +33,7 @@ const RestaurantsScreen = () => {
           )}
           renderItem={({item}) => (
             <SingleRestaurants
+              action={() => navigation.navigate('RestaurantSingle')}
               name={item.name}
               rating={item.rating}
               image={item.image}

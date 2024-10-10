@@ -3,8 +3,10 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {fonts} from '../constants/fonts';
 import {colors} from '../constants/colors';
+import {useNavigation} from '@react-navigation/native';
 
 const OrderHeader = ({active}: {active: string}) => {
+  const navigation = useNavigation();
   return (
     <>
       <Text style={styles.header}>Orders</Text>
@@ -18,7 +20,7 @@ const OrderHeader = ({active}: {active: string}) => {
               borderBottomColor: '#58D189',
             },
           ]}
-          onPress={() => {}}>
+          onPress={() => navigation.navigate('OrderPage' as never)}>
           Cart
         </Text>
         <Text
@@ -30,7 +32,7 @@ const OrderHeader = ({active}: {active: string}) => {
               borderBottomColor: '#58D189',
             },
           ]}
-          onPress={() => {}}>
+          onPress={() => navigation.navigate('History' as never)}>
           History
         </Text>
       </View>

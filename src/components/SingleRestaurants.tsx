@@ -1,5 +1,12 @@
 /* eslint-disable react-native/no-inline-styles */
-import {StyleSheet, Text, Image, View, ImageSourcePropType} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  Image,
+  View,
+  ImageSourcePropType,
+  TouchableOpacity,
+} from 'react-native';
 import React, {FC} from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import {fonts} from '../constants/fonts';
@@ -9,11 +16,12 @@ type Props = {
   name: string;
   rating: string;
   page: boolean;
+  action: () => void;
 };
 
-const SingleRestaurants: FC<Props> = ({name, rating, image, page}) => {
+const SingleRestaurants: FC<Props> = ({name, rating, image, page, action}) => {
   return (
-    <View style={styles.restaurantContainer}>
+    <TouchableOpacity style={styles.restaurantContainer} onPress={action}>
       <Image
         source={image}
         style={{
@@ -29,7 +37,7 @@ const SingleRestaurants: FC<Props> = ({name, rating, image, page}) => {
           <AntDesign name="staro" color={'#FF6600'} size={18} />
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

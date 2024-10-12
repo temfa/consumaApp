@@ -13,28 +13,28 @@ import Icon, {Icons} from '../../components/Icons';
 import {TouchableOpacity} from 'react-native';
 
 const HomeScreen = () => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState<boolean>(false);
   const product = [
     {
       id: '1',
       image: require('../../assets/oil.png'),
       title: 'Devon’s King’s Oil',
       size: '3L',
-      price: '5,000',
+      price: 5000,
     },
     {
       id: '2',
       image: require('../../assets/ricebag.png'),
       title: 'East End Basmati Rice',
       size: '1kg',
-      price: '60,000',
+      price: 60000,
     },
     {
       id: '3',
       image: require('../../assets/oil.png'),
       title: 'Devon’s King’s Oil',
       size: '3L',
-      price: '5,000',
+      price: 5000,
     },
   ];
 
@@ -83,10 +83,15 @@ const HomeScreen = () => {
       <Modals
         visible={visible}
         points={['25%', '50%']}
-        setFalse={() => setVisible(false)}>
+        setFalse={() => {
+          setVisible(false);
+        }}>
         <View style={styles.contentContainer}>
           <TouchableOpacity style={styles.close}>
-            <TouchableOpacity onPress={() => setVisible(false)}>
+            <TouchableOpacity
+              onPress={() => {
+                setVisible(false);
+              }}>
               <Icon
                 type={Icons.Ionicons}
                 name="close-circle-outline"

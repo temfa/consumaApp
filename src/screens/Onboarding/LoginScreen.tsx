@@ -1,9 +1,17 @@
-import {Image, StyleSheet, Text, TextInput, View} from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React from 'react';
 import {colors} from '../../constants/colors';
 import {fonts} from '../../constants/fonts';
 // import CheckBox from '@react-native-community/checkbox';
 import PrimaryButton from '../../components/PrimaryButton';
+import {setItem} from '../../utils/asyncStorage';
 
 const LoginScreen = ({navigation}: {navigation: any}) => {
   // const [toggleCheckBox, setToggleCheckBox] = useState(false);
@@ -52,17 +60,22 @@ const LoginScreen = ({navigation}: {navigation: any}) => {
           </View> */}
           <PrimaryButton
             title="Create Account"
-            action={() => navigation.navigate('HomeScreen')}
+            action={async () => {
+              await setItem('onboarded', true);
+              navigation.navigate('HomeScreen');
+            }}
             active={true}
           />
         </View>
       </View>
       <View style={styles.loginOr}>
         <Text style={styles.loginWith}>Don't have an account?</Text>
-        <View style={styles.loginAs}>
+        <TouchableOpacity
+          style={styles.loginAs}
+          onPress={() => navigation.navigate('Signup')}>
           <Image source={require('../../assets/profile-circle1.png')} />
           <Text style={styles.loginText}>Signup</Text>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   );

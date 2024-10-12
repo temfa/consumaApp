@@ -16,6 +16,7 @@ import {profileLinks} from '../../utils/data';
 import Icon, {Icons} from '../../components/Icons';
 import ProfileDetails from '../../components/ProfileDetails';
 import ManageAddress from '../../components/ManageAddress';
+import {setItem} from '../../utils/asyncStorage';
 
 const ProfileScreen = ({navigation}: {navigation: any}) => {
   const [profilePop, setProfilePop] = useState(false);
@@ -97,7 +98,10 @@ const ProfileScreen = ({navigation}: {navigation: any}) => {
               );
             })}
             <TouchableOpacity
-              onPress={() => navigation.navigate('Login')}
+              onPress={async () => {
+                await setItem('onboarded', false);
+                navigation.navigate('Login');
+              }}
               style={[styles.accountSingle, {backgroundColor: '#FEF2F2'}]}>
               <View style={styles.accountFirst}>
                 <View

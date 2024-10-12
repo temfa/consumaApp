@@ -3,6 +3,7 @@ import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React, {useState} from 'react';
 import {fonts} from '../../constants/fonts';
 import {colors} from '../../constants/colors';
+import {setItem} from '../../utils/asyncStorage';
 
 const UserProfilling = ({navigation}: {navigation: any}) => {
   const [state, setState] = useState(false);
@@ -42,8 +43,9 @@ const UserProfilling = ({navigation}: {navigation: any}) => {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.secondAnswer}
-            onPress={() => {
+            onPress={async () => {
               if (state) {
+                await setItem('onboarded', true);
                 navigation.navigate('HomeScreen');
               } else {
                 setState(true);

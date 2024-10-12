@@ -15,7 +15,7 @@ const Modals = ({
   setFalse,
 }: {
   children: any;
-  visible: boolean;
+  visible: boolean | Promise<boolean>;
   points?: string[] | number[];
   setFalse: () => void;
 }) => {

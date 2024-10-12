@@ -1,3 +1,4 @@
+/* eslint-disable curly */
 /* eslint-disable react-native/no-inline-styles */
 import {
   StyleSheet,
@@ -6,13 +7,13 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Modals from './Modals';
 import {fonts} from '../constants/fonts';
-import {addresses} from '../utils/data';
 import {RadioButton} from 'react-native-paper';
 import {colors} from '../constants/colors';
 import PrimaryButton from './PrimaryButton';
+import {getItem, setItem} from '../utils/asyncStorage';
 
 const ManageAddress = ({
   visible,
@@ -22,14 +23,24 @@ const ManageAddress = ({
   action: () => void;
 }) => {
   const [selectedValue, setSelectedValue] = useState(-20);
+  const [address, setAddress] = useState<string[]>([]);
   const [newAddress, setNewAddress] = useState(false);
   const [input, setInput] = useState('');
+
+  const getAddress = async () => {
+    const data = await getItem('address');
+    if (data) setAddress(data as string[]);
+  };
+  useEffect(() => {
+    getAddress();
+  }, []);
+
   return (
     <Modals visible={visible} setFalse={action} points={['50']}>
       <View style={styles.container}>
         <Text style={styles.header}>Manage Address</Text>
         <View style={styles.addressCont}>
-          {addresses?.map((item, index) => {
+          {address?.map((item, index) => {
             return (
               <View key={index} style={styles.addressSingle}>
                 <Text
@@ -66,8 +77,9 @@ const ManageAddress = ({
               </View>
               <TouchableOpacity
                 style={styles.addNew}
-                onPress={() => {
-                  addresses.push(input);
+                onPress={async () => {
+                  address.push(input);
+                  await setItem('address', address);
                   setNewAddress(false);
                 }}>
                 <Text style={styles.addNewText}>Save address</Text>

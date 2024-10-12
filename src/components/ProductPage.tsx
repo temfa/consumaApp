@@ -1,15 +1,16 @@
 /* eslint-disable react-native/no-inline-styles */
-import {FlatList, StyleSheet, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import FoodProduct from './FoodProduct';
 import {colors} from '../constants/colors';
 import Notification from './Notification';
 import {productData} from '../utils/data';
+import Animated, {LinearTransition} from 'react-native-reanimated';
 
 const ProductPage = () => {
   return (
     <View style={styles.container}>
-      <FlatList
+      <Animated.FlatList
         data={productData}
         renderItem={({item}) => (
           <FoodProduct
@@ -20,6 +21,8 @@ const ProductPage = () => {
             page={true}
           />
         )}
+        keyboardDismissMode={'on-drag'}
+        itemLayoutAnimation={LinearTransition}
         keyExtractor={item => item.id}
         numColumns={2}
         // eslint-disable-next-line react/no-unstable-nested-components

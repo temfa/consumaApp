@@ -12,7 +12,7 @@ type Props = {
     image: ImageSourcePropType;
     title: string;
     size: string;
-    price: string;
+    price: number;
   }[];
 };
 

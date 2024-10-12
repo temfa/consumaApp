@@ -10,19 +10,27 @@ const BestDeals = () => {
   const data = [
     {
       id: '1',
-      title: '2',
+      title: 'Get 20% discount on your first foods order',
+      image: require('../assets/bestdeals.png'),
+      width: 140,
+      height: 84,
+      bac: colors.primaryGreen,
     },
     {
       id: '2',
-      title: '3',
+      title: 'Get 10% discount on your first junks order ',
+      image: require('../assets/pop.png'),
+      width: 116,
+      height: 95,
+      bac: '#252525',
     },
     {
       id: '3',
-      title: '4',
-    },
-    {
-      id: '4',
-      title: '5',
+      title: 'Get 15% discount on your fresh foods order ',
+      image: require('../assets/fresh.png'),
+      width: 145,
+      height: 93,
+      bac: '#B2008A',
     },
   ];
 
@@ -33,22 +41,23 @@ const BestDeals = () => {
       <Swiper
         autoplay={true}
         height={128}
+        autoplayTimeout={3}
         showsPagination={false}
         onIndexChanged={index => setActive(index)}>
         {data?.map(item => {
           return (
-            <View style={styles.bestDeals} key={item.id}>
+            <View
+              style={[{...styles.bestDeals, backgroundColor: item.bac}]}
+              key={item.id}>
               <View style={styles.bestDealsText}>
-                <Text style={styles.title}>
-                  Get 20% discount on your first foods order{' '}
-                </Text>
+                <Text style={styles.title}>{item.title}</Text>
                 <TouchableOpacity style={styles.cta}>
-                  <Text style={styles.ctaText}>Order Now {item.title} </Text>
+                  <Text style={styles.ctaText}>Order Now </Text>
                 </TouchableOpacity>
               </View>
               <Image
-                source={require('../assets/bestdeals.png')}
-                style={styles.bestDealsImage}
+                source={item.image}
+                style={{width: item.width, height: item.height}}
               />
             </View>
           );
@@ -120,10 +129,10 @@ const styles = StyleSheet.create({
   bestDeals: {
     paddingVertical: 16,
     paddingLeft: 16,
-    backgroundColor: colors.primaryGreen,
     borderRadius: 16,
     flexDirection: 'row',
     alignItems: 'flex-end',
+    justifyContent: 'space-between',
   },
   bestDealsText: {
     width: 200,

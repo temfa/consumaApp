@@ -1,17 +1,28 @@
 /* eslint-disable react-native/no-inline-styles */
-import {Image, ImageSourcePropType, StyleSheet, Text, View} from 'react-native';
-import React, {FC} from 'react';
+import {
+  Image,
+  ImageSourcePropType,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import React, {FC, useContext} from 'react';
 import {fonts} from '../constants/fonts';
+import {formatter} from '../utils/formatter';
+import {CartContext} from '../context/cartContext';
+import {generate} from '../utils/helper';
 
 type Props = {
   image: ImageSourcePropType;
   title: string;
   size: string;
-  price: string;
+  price: number;
   page?: boolean;
 };
 
 const FoodProduct: FC<Props> = ({image, title, size, price, page}) => {
+  const {addToCartItem} = useContext(CartContext);
   return (
     <View style={{...styles.container, width: page ? '48%' : 160}}>
       <Image
@@ -27,8 +38,21 @@ const FoodProduct: FC<Props> = ({image, title, size, price, page}) => {
         <Text style={{...styles.detailsText, flex: 0}}>| {size}</Text>
       </View>
       <View style={styles.priceList}>
-        <Text style={styles.price}>₦{price}</Text>
-        <Image source={require('../assets/plus.png')} />
+        <Text style={styles.price}>{formatter.format(price)}</Text>
+        <TouchableOpacity
+          onPress={() => {
+            const item = {
+              id: generate(6),
+              image: image,
+              title: title,
+              size: size,
+              price: price,
+              number: 1,
+            };
+            addToCartItem(item);
+          }}>
+          <Image source={require('../assets/plus.png')} />
+        </TouchableOpacity>
       </View>
     </View>
   );

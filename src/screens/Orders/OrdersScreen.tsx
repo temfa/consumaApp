@@ -7,27 +7,30 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import {colors} from '../../constants/colors';
 import {fonts} from '../../constants/fonts';
 import InfoText from '../../components/InfoText';
-import {cart} from '../../utils/data';
 import SingleCart from '../../components/SingleCart';
 import Modals from '../../components/Modals';
 import OrderHeader from '../../components/OrderHeader';
-import Button from '../../components/Button';
+import PrimaryButton from '../../components/PrimaryButton';
+import {formatter} from '../../utils/formatter';
+import {CartContext} from '../../context/cartContext';
 
 const OrdersScreen = ({navigation}: {navigation: any}) => {
   const [visible, setVisible] = useState(false);
-
+  const {cartItems, totalPrice, emptyCart, addToCartItem, subTractItem} =
+    useContext(CartContext);
   return (
     <View style={styles.container}>
       <OrderHeader active="Cart" />
       <View style={styles.totalItems}>
         <Text style={styles.totalItemsText}>
-          Total Items <Text style={{fontFamily: fonts.Bold}}>(3)</Text>
+          Total Items{' '}
+          <Text style={{fontFamily: fonts.Bold}}>({cartItems.length})</Text>
         </Text>
-        <TouchableOpacity style={styles.emptyCart}>
+        <TouchableOpacity style={styles.emptyCart} onPress={emptyCart}>
           <Text style={styles.emptyCartText}>Empty Cart</Text>
         </TouchableOpacity>
       </View>
@@ -35,22 +38,33 @@ const OrdersScreen = ({navigation}: {navigation: any}) => {
         <Text style={styles.cartSummary}>Cart Summary</Text>
         <View style={styles.subTotal}>
           <Text style={styles.cartSummary}>Sub-Total</Text>
-          <Text style={styles.total}>₦220,000</Text>
+          <Text style={styles.total}>
+            {cartItems.length === 0
+              ? formatter.format(0)
+              : formatter.format(totalPrice)}
+          </Text>
         </View>
       </View>
       <View style={{paddingHorizontal: 16}}>
         <InfoText text="This does not include delivery fee. Delivery fee will be determined once location is confirmed" />
       </View>
       <ScrollView style={styles.cartContainer}>
-        {cart?.map((item, index) => {
+        {cartItems?.map((item, index) => {
           return (
             <SingleCart
               key={index}
-              add={() =>
-                (cart[Number(item.id)].number = cart[Number(item.id)].number) +
-                1
-              }
-              minus={() => {}}
+              add={() => {
+                const data = {
+                  id: item.id,
+                  image: item.image,
+                  title: item.title,
+                  size: item.size,
+                  price: item.price,
+                  number: item.number,
+                };
+                addToCartItem(data);
+              }}
+              minus={() => subTractItem(item.title)}
               name={item.title}
               number={item.number}
               img={item.image}
@@ -60,10 +74,13 @@ const OrdersScreen = ({navigation}: {navigation: any}) => {
           );
         })}
       </ScrollView>
-      <Button
-        action={() => setVisible(true)}
-        buttonText="Proceed to checkout"
-      />
+      <View style={{marginHorizontal: 16, marginBottom: 10}}>
+        <PrimaryButton
+          action={() => setVisible(true)}
+          title="Proceed to checkout"
+          active={cartItems.length === 0 ? false : true}
+        />
+      </View>
       <Modals
         visible={visible}
         points={['25%', '50%']}

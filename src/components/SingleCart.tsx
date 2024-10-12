@@ -7,16 +7,17 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
-import React, {FC} from 'react';
+import React, {FC, useContext} from 'react';
 import Icon, {Icons} from './Icons';
 import {fonts} from '../constants/fonts';
 import {truncateText} from '../utils/helper';
+import {CartContext} from '../context/cartContext';
 
 type Props = {
   img: ImageSourcePropType;
   name: string;
   size: string;
-  price: string;
+  price: number;
   add: () => void;
   minus: () => void;
   number: number;
@@ -31,6 +32,7 @@ const SingleCart: FC<Props> = ({
   minus,
   number,
 }) => {
+  const {deleteCartItem} = useContext(CartContext);
   return (
     <View style={styles.singleCartContainer}>
       <Image source={img} width={105} height={14} style={{height: 84}} />
@@ -40,29 +42,31 @@ const SingleCart: FC<Props> = ({
             <Text style={styles.name}>{truncateText(name, 15)}</Text>
             <Text style={[styles.name, {color: '#555555'}]}>{size}</Text>
           </View>
-          <Icon
-            type={Icons.FontAwesome}
-            name="trash-o"
-            color="#F64C4C"
-            size={20}
-          />
+          <TouchableOpacity onPress={() => deleteCartItem(name)}>
+            <Icon
+              type={Icons.FontAwesome}
+              name="trash-o"
+              color="#F64C4C"
+              size={20}
+            />
+          </TouchableOpacity>
         </View>
         <View style={styles.singleCartPrice}>
           <Text style={styles.name}>{price}</Text>
           <View style={styles.singleAction}>
-            <TouchableOpacity onPress={add}>
+            <TouchableOpacity onPress={minus}>
               <Icon
-                type={Icons.Ionicons}
-                name="add-circle-outline"
+                type={Icons.MaterialCommunityIcons}
+                name="minus-circle-outline"
                 color="#58D189"
                 size={32}
               />
             </TouchableOpacity>
             <Text>{number}</Text>
-            <TouchableOpacity onPress={minus}>
+            <TouchableOpacity onPress={add}>
               <Icon
-                type={Icons.MaterialCommunityIcons}
-                name="minus-circle-outline"
+                type={Icons.Ionicons}
+                name="add-circle-outline"
                 color="#58D189"
                 size={32}
               />

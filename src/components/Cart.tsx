@@ -1,15 +1,18 @@
 /* eslint-disable react-native/no-inline-styles */
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import {colors} from '../constants/colors';
 import {fonts} from '../constants/fonts';
 import OrderHeader from './OrderHeader';
 import {RadioButton} from 'react-native-paper';
 import Icon, {Icons} from './Icons';
+import {CartContext} from '../context/cartContext';
+import {formatter} from '../utils/formatter';
 
 const Cart = ({page}: {page: string}) => {
   const [active, setActive] = useState(false);
   const [selectedValue, setSelectedValue] = useState('');
+  const {totalPrice} = useContext(CartContext);
   return (
     <View style={styles.container}>
       <View style={styles.containerWrapper}>
@@ -91,17 +94,19 @@ const Cart = ({page}: {page: string}) => {
           <>
             <View style={styles.singleSummary}>
               <Text style={styles.title}>Sub-Total</Text>
-              <Text style={styles.amount}>₦220,000</Text>
+              <Text style={styles.amount}>{formatter.format(totalPrice)}</Text>
             </View>
             <View style={styles.singleSummary}>
               <Text style={styles.title}>Delivery Fee</Text>
-              <Text style={styles.amount}>₦10,000</Text>
+              <Text style={styles.amount}>{formatter.format(10000)}</Text>
             </View>
           </>
         )}
         <View style={styles.singleSummary}>
           <Text style={styles.amount}>Total</Text>
-          <Text style={styles.amount}>₦230,000</Text>
+          <Text style={styles.amount}>
+            {formatter.format(totalPrice + 10000)}
+          </Text>
         </View>
       </View>
     </View>

@@ -1,3 +1,5 @@
+import {ImageSourcePropType} from 'react-native';
+
 export const productPreference = [
   {
     id: '1',
@@ -216,58 +218,67 @@ export const productData = [
     image: require('../assets/oil.png'),
     title: 'Devon’s King’s Oil',
     size: '3L',
-    price: '5,000',
+    price: 5000,
   },
   {
     id: '2',
     image: require('../assets/ricebag.png'),
     title: 'East End Basmati Rice',
     size: '1kg',
-    price: '60,000',
+    price: 60000,
   },
   {
     id: '3',
     image: require('../assets/oil.png'),
     title: 'Devon’s King’s Oil',
     size: '3L',
-    price: '5,000',
+    price: 5000,
   },
   {
     id: '4',
     image: require('../assets/ricebag.png'),
     title: 'East End Basmati Rice',
     size: '1kg',
-    price: '60,000',
+    price: 60000,
   },
   {
     id: '5',
     image: require('../assets/oil.png'),
     title: 'Devon’s King’s Oil',
     size: '3L',
-    price: '5,000',
+    price: 5000,
   },
   {
     id: '6',
     image: require('../assets/ricebag.png'),
     title: 'East End Basmati Rice',
     size: '1kg',
-    price: '60,000',
+    price: 60000,
   },
   {
     id: '7',
     image: require('../assets/oil.png'),
     title: 'Devon’s King’s Oil',
     size: '3L',
-    price: '5,000',
+    price: 5000,
   },
   {
     id: '8',
     image: require('../assets/oil.png'),
     title: 'Devon’s King’s Oil',
     size: '3L',
-    price: '5,000',
+    price: 5000,
   },
 ];
+
+export type CartType = {
+  id: string;
+  image: ImageSourcePropType;
+  title: string;
+  size: string;
+  price: number;
+  number: number;
+};
 
 export const cart = [
   {
@@ -275,7 +286,7 @@ export const cart = [
     image: require('../assets/oil.png'),
     title: 'Devon’s King’s Oil',
     size: '3L',
-    price: '5,000',
+    price: 5000,
     number: 1,
   },
   {
@@ -283,7 +294,7 @@ export const cart = [
     image: require('../assets/ricebag.png'),
     title: 'East End Basmati Rice',
     size: '1kg',
-    price: '60,000',
+    price: 60000,
     number: 1,
   },
   {
@@ -291,7 +302,7 @@ export const cart = [
     image: require('../assets/oil.png'),
     title: 'Mamador’s Vegetable Oil',
     size: '3L',
-    price: '5,000',
+    price: 5000,
     number: 1,
   },
   {
@@ -299,7 +310,7 @@ export const cart = [
     image: require('../assets/oil.png'),
     title: 'Mamador’s Vegetable Oil',
     size: '3L',
-    price: '5,000',
+    price: 5000,
     number: 1,
   },
 ];
@@ -309,7 +320,7 @@ export const orders = [
     id: '1',
     image: require('../assets/ricebag.png'),
     title: 'East End Basmati Rice',
-    price: '60,000',
+    price: 60000,
     quantity: 7,
     date: '12/09/2023, 3:30pm',
     address: 'Block 234, point 4, Ajah Lekki Estate Phase 1',
@@ -319,7 +330,7 @@ export const orders = [
     id: '2',
     image: require('../assets/ricebag.png'),
     title: 'East End Basmati Rice',
-    price: '60,000',
+    price: 60000,
     quantity: 7,
     date: '12/09/2023, 3:30pm',
     address: 'Block 234, point 4, Ajah Lekki Estate Phase 1',
@@ -330,7 +341,7 @@ export const orders = [
     image: require('../assets/oil.png'),
     title: 'Mamador’s Vegetable Oil',
     size: '3L',
-    price: '5,000',
+    price: 5000,
     quantity: 7,
     date: '12/09/2023, 3:30pm',
     address: 'Block 234, point 4, Ajah Lekki Estate Phase 1',

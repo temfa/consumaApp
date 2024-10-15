@@ -23,7 +23,7 @@ import {CartProvider} from './src/context/cartContext';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
-  const [showOnboarded, setShowOnboarded] = useState<boolean | null>(null);
+  const [showOnboarded, setShowOnboarded] = useState<string | null>(null);
   const colorScheme = useColorScheme();
   const MyTheme = {
     ...DefaultTheme,
@@ -40,12 +40,14 @@ const App = () => {
 
   const checkIfAlreadyOnboarded = async () => {
     const onboarded = await getItem('onboarded');
-    if (onboarded) {
+    if (onboarded === undefined || onboarded === null) {
       // successfully onboarded, don't show onboarding screen once again
-      setShowOnboarded(false);
-    } else {
+      setShowOnboarded('first');
+    } else if (onboarded) {
       // didn't onboard, show onboarding screen
-      setShowOnboarded(true);
+      setShowOnboarded('false');
+    } else {
+      setShowOnboarded('true');
     }
   };
   if (showOnboarded === null) {
@@ -63,7 +65,13 @@ const App = () => {
             <CartProvider>
               <Stack.Navigator
                 screenOptions={{headerShown: false}}
-                initialRouteName={showOnboarded ? 'Login' : 'HomeScreen'}>
+                initialRouteName={
+                  showOnboarded === 'first'
+                    ? 'Welcome'
+                    : showOnboarded === 'true'
+                    ? 'LoginScreen'
+                    : 'HomeScreen'
+                }>
                 <Stack.Screen name="Welcome" component={WelcomeScreen} />
                 <Stack.Screen name="Signup" component={SignupScreen} />
                 <Stack.Screen name="Login" component={LoginScreen} />

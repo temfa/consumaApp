@@ -4,8 +4,10 @@ import React from 'react';
 import ProductHeader from './ProductHeader';
 import SingleRestaurants from './SingleRestaurants';
 import {restaurantsData} from '../utils/data';
+import {useNavigation} from '@react-navigation/native';
 
 const Restaurants = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <ProductHeader title="Restaurants" link={'Restaurant' as never} />
@@ -18,6 +20,7 @@ const Restaurants = () => {
         showsHorizontalScrollIndicator={false}
         renderItem={({item}) => (
           <SingleRestaurants
+            action={() => navigation.navigate('RestaurantSingle' as never)}
             name={item.name}
             rating={item.rating}
             image={item.image}
@@ -35,6 +38,5 @@ const styles = StyleSheet.create({
   container: {
     gap: 24,
     marginTop: 24,
-    paddingBottom: 37,
   },
 });

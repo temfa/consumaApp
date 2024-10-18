@@ -15,8 +15,7 @@ const SignupScreen = ({navigation}: {navigation: any}) => {
         <View style={styles.containerText}>
           <Text style={styles.header}>Let’s get started!</Text>
           <Text style={styles.headerText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
-            iaculis amet, est interdum.
+            Join us and start your journey today!
           </Text>
         </View>
         <View style={styles.form}>

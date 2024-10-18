@@ -62,7 +62,7 @@ const SingleCart: FC<Props> = ({
                 size={32}
               />
             </TouchableOpacity>
-            <Text>{number}</Text>
+            <Text style={styles.number}>{number}</Text>
             <TouchableOpacity onPress={add}>
               <Icon
                 type={Icons.Ionicons}
@@ -113,5 +113,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 10,
     alignItems: 'center',
+  },
+  number: {
+    color: '#252525',
+    fontFamily: fonts.SemiBold,
+    fontSize: 16,
+    lineHeight: 19.2,
   },
 });

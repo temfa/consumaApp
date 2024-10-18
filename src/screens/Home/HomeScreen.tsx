@@ -1,5 +1,6 @@
+/* eslint-disable curly */
 import {Image, ScrollView, StyleSheet, Text, View} from 'react-native';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
 import {colors} from '../../constants/colors';
@@ -11,9 +12,34 @@ import Notification from '../../components/Notification';
 import Modals from '../../components/Modals';
 import Icon, {Icons} from '../../components/Icons';
 import {TouchableOpacity} from 'react-native';
+import {getItem} from '../../utils/asyncStorage';
+import {truncateText} from '../../utils/helper';
 
 const HomeScreen = () => {
   const [visible, setVisible] = useState<boolean>(false);
+  const [address, setAddress] = useState('');
+  const [time, setTime] = useState('');
+  const getSingleAddress = async () => {
+    const data = await getItem('singleAddress');
+    if (data) setAddress(data as string);
+  };
+  useEffect(() => {
+    getSingleAddress();
+    getTimeOfDay();
+  }, []);
+  const getTimeOfDay = () => {
+    const currentHour = new Date().getHours();
+
+    if (currentHour >= 5 && currentHour < 12) {
+      setTime('Top of the Morning!');
+    } else if (currentHour >= 12 && currentHour < 16) {
+      setTime('Top of the Afternoon!');
+    } else if (currentHour >= 16 && currentHour < 19) {
+      setTime('Top of the Evening!');
+    } else {
+      setTime('Top of the Night!');
+    }
+  };
   const product = [
     {
       id: '1',
@@ -45,7 +71,7 @@ const HomeScreen = () => {
           <View style={styles.welcomeHeader}>
             <View style={styles.welcomeText}>
               <Text style={styles.welcomeText1}>Welcome, Felicia</Text>
-              <Text style={styles.welcomeText2}>Top of the Morning!</Text>
+              <Text style={styles.welcomeText2}>{time}</Text>
             </View>
             <SimpleLineIcons name="bell" color="#292D32" size={20} />
           </View>
@@ -55,7 +81,7 @@ const HomeScreen = () => {
               <View style={styles.deliverText}>
                 <Text style={styles.deliverText1}>Deliver to</Text>
                 <Text style={styles.deliverText2}>
-                  Ajah Lekki Estate Phase 1
+                  {truncateText(address, 25)}
                 </Text>
               </View>
             </View>
@@ -124,7 +150,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 16,
     backgroundColor: colors.white,
-    paddingBottom: 37,
+    paddingBottom: 24,
   },
   welcomeContainer: {
     backgroundColor: '#EAF9F0',

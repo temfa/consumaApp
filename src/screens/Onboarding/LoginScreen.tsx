@@ -21,8 +21,7 @@ const LoginScreen = ({navigation}: {navigation: any}) => {
         <View style={styles.containerText}>
           <Text style={styles.header}>Welcome back!</Text>
           <Text style={styles.headerText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
-            iaculis amet, est interdum.
+            Glad to see you again! Let's get you signed in.
           </Text>
         </View>
         <View style={styles.form}>

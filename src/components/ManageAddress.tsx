@@ -22,7 +22,7 @@ const ManageAddress = ({
   visible: boolean;
   action: () => void;
 }) => {
-  const [selectedValue, setSelectedValue] = useState(-20);
+  const [selectedValue, setSelectedValue] = useState('');
   const [address, setAddress] = useState<string[]>([]);
   const [newAddress, setNewAddress] = useState(false);
   const [input, setInput] = useState('');
@@ -31,8 +31,13 @@ const ManageAddress = ({
     const data = await getItem('address');
     if (data) setAddress(data as string[]);
   };
+  const getSingleAddress = async () => {
+    const data = await getItem('singleAddress');
+    if (data) setSelectedValue(data as string);
+  };
   useEffect(() => {
     getAddress();
+    getSingleAddress();
   }, []);
 
   return (
@@ -48,7 +53,7 @@ const ManageAddress = ({
                     {
                       ...styles.address,
                       color:
-                        selectedValue === index
+                        selectedValue === item
                           ? colors.primaryGreen
                           : '#252525',
                     },
@@ -57,9 +62,10 @@ const ManageAddress = ({
                 </Text>
                 <RadioButton.Android
                   value="new"
-                  status={selectedValue === index ? 'checked' : 'unchecked'}
-                  onPress={() => {
-                    setSelectedValue(index);
+                  status={selectedValue === item ? 'checked' : 'unchecked'}
+                  onPress={async () => {
+                    setSelectedValue(item);
+                    await setItem('singleAddress', item);
                   }}
                   color={colors.primaryGreen}
                 />
@@ -90,7 +96,7 @@ const ManageAddress = ({
               style={styles.addNew}
               onPress={() => {
                 setNewAddress(true);
-                setSelectedValue(-20);
+                setSelectedValue('');
               }}>
               <Text style={styles.addNewText}>Add new address</Text>
             </TouchableOpacity>
@@ -99,7 +105,7 @@ const ManageAddress = ({
         <PrimaryButton
           title="Apply Changes"
           action={action}
-          active={selectedValue !== -20 ? true : false}
+          active={selectedValue !== '' ? true : false}
         />
       </View>
     </Modals>

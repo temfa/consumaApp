@@ -23,14 +23,22 @@ import PaymentScreen from '../screens/Orders/PaymentScreen';
 import ConfirmOrderScreen from '../screens/Orders/ConfirmOrderScreen';
 import OrderHistoryScreen from '../screens/Orders/OrderHistoryScreen';
 import RestaurantSingleScreen from '../screens/Home/RestaurantSingleScreen';
+import ProductSingleScreen from '../screens/Home/ProductSingleScreen';
+import {ProductProps} from '../components/FoodProduct';
 
 const Stack = createNativeStackNavigator();
 
 const Tab = createBottomTabNavigator();
+export type RootStackParamList = {
+  Home: undefined;
+  Products: ProductProps;
+};
 
 const HomeStack = () => {
   return (
-    <Stack.Navigator screenOptions={{headerShown: true}}>
+    <Stack.Navigator
+      screenOptions={{headerShown: true}}
+      initialRouteName="HomePage">
       <Stack.Screen
         name="HomePage"
         component={HomeScreen}
@@ -40,8 +48,13 @@ const HomeStack = () => {
       <Stack.Screen name="Recommended For You" component={ReconmendScreen} />
       <Stack.Screen name="Restaurant" component={RestaurantsScreen} />
       <Stack.Screen
-        name="RestaurantSingle"
+        name="Restaurant Single"
         component={RestaurantSingleScreen}
+      />
+      <Stack.Screen
+        name="Products"
+        component={ProductSingleScreen}
+        options={{headerShown: false}}
       />
       <Stack.Screen name="Notifications" component={NotificationScreen} />
     </Stack.Navigator>

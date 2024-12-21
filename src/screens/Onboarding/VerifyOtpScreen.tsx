@@ -15,9 +15,8 @@ import PrimaryButton from '../../components/PrimaryButton';
 const VerifyOtpScreen = ({navigation}: {navigation: any}) => {
   const data = [1, 2, 3, 4, 5];
   const [active, setActive] = useState(0);
-  const [codes, setCodes] = useState<string[] | undefined>(Array(6).fill(''));
+  const [codes, setCodes] = useState<string[] | undefined>(Array(5).fill(''));
   const refs: RefObject<TextInput>[] = [
-    useRef<TextInput>(null),
     useRef<TextInput>(null),
     useRef<TextInput>(null),
     useRef<TextInput>(null),

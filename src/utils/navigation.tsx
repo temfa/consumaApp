@@ -29,6 +29,7 @@ import {ProductProps} from '../components/FoodProduct';
 const Stack = createNativeStackNavigator();
 
 const Tab = createBottomTabNavigator();
+
 export type RootStackParamList = {
   Home: undefined;
   Products: ProductProps;
